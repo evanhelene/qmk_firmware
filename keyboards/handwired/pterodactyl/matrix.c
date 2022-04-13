@@ -229,13 +229,13 @@ uint8_t matrix_scan(void)
         if (++expander_reset_loop == 0) {
             // since expander_reset_loop is 8 bit - we'll try to reset once in 255 matrix scans
             // this will be approx bit more frequent than once per second
-            print("trying to reset expander\n");
+            // print("trying to reset expander\n");
             init_expander();
-            if (expander_status) {
-                print("left side not responding\n");
-            } else {
-                print("left side attached\n");
-            }
+            // if (expander_status) {
+            //     print("left side not responding\n");
+            // } else {
+            //     print("left side attached\n");
+            // }
         }
     }
 

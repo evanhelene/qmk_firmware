@@ -80,8 +80,8 @@ void matrix_init_custom(void) {
 }
 
 bool matrix_scan_custom(matrix_row_t current_matrix[]) {
-    // HACK(ibash) without the delay between the two calls to i2c_read_hand, the
-    // second call to i2c_read_hand breaks. I observed that the i2s start isn't
+    // HACK(ibash) without the delay between the two calls to _hand, the
+    // second call to _hand breaks. I observed that the i2s start isn't
     // sent, or maybe it is, but the address matcher in the attiny can't recognize
     // it. In any case, a short delay fixes it.
     read_hand_t left_state = i2c_read_hand(LEFT, current_matrix);

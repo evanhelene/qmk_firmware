@@ -1,0 +1,19 @@
+\u03a8 Compiling keymap with make --jobs=1 handwired/pterodactyl:i2c_scanner
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055_support.c: In function 'BNO055_I2C_bus_read':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055_support.c:93:15: warning: unused variable 'status' [-Wunused-variable]
+  i2c_status_t status = i2c_readReg(dev_addr, reg_addr, reg_data, cnt, I2C_TIMEOUT);
+               ^~~~~~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055_support.c: In function 'BNO055_I2C_bus_write':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055_support.c:142:15: warning: unused variable 'status' [-Wunused-variable]
+  i2c_status_t status = i2c_writeReg(dev_addr, reg_addr, reg_data, cnt, I2C_TIMEOUT);
+               ^~~~~~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055_support.c: In function '_delay':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055_support.c:166:2: warning: implicit declaration of function 'delay'; did you mean '_delay'? [-Wimplicit-function-declaration]
+  delay(long(period));
+  ^~~~~
+  _delay
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055_support.c:166:8: error: expected expression before 'long'
+  delay(long(period));
+        ^~~~
+make[1]: *** [builddefs/common_rules.mk:457: .build/obj_handwired_pterodactyl_i2c_scanner/BNO055_support.o] Error 1
+make: *** [Makefile:413: handwired/pterodactyl:i2c_scanner] Error 1

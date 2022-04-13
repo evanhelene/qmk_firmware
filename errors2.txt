@@ -1,0 +1,2105 @@
+\u03a8 Compiling keymap with make --jobs=1 handwired/pterodactyl:i2c_scanner
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:45:1: error: return type defaults to 'int' error=implicit-int]
+ bus_read(dev_addr, reg_addr, reg_data, r_len){}
+ ^~~~~~~~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:45:1: error: function declaration isn't a prototype error=strict-prototypes]
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bus_read':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:45:1: error: type of 'dev_addr' defaults to 'int' error=implicit-int]
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:45:1: error: type of 'reg_addr' defaults to 'int' error=implicit-int]
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:45:1: error: type of 'reg_data' defaults to 'int' error=implicit-int]
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:45:1: error: type of 'r_len' defaults to 'int' error=implicit-int]
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: At top level:
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:46:1: error: return type defaults to 'int' error=implicit-int]
+ bus_write(dev_addr, reg_addr, reg_data, wr_len){}
+ ^~~~~~~~~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:46:1: error: function declaration isn't a prototype error=strict-prototypes]
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bus_write':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:46:1: error: type of 'dev_addr' defaults to 'int' error=implicit-int]
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:46:1: error: type of 'reg_addr' defaults to 'int' error=implicit-int]
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:46:1: error: type of 'reg_data' defaults to 'int' error=implicit-int]
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:46:1: error: type of 'wr_len' defaults to 'int' error=implicit-int]
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_write_register':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:160:15: error: comparison between pointer and zero character constant error=pointer-compare]
+  if (p_bno055 == BNO055_Zero_U8X) {
+               ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:160:6: note: did you mean to dereference the pointer?
+  if (p_bno055 == BNO055_Zero_U8X) {
+      ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_read_register':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:206:15: error: comparison between pointer and zero character constant error=pointer-compare]
+  if (p_bno055 == BNO055_Zero_U8X) {
+               ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:206:6: note: did you mean to dereference the pointer?
+  if (p_bno055 == BNO055_Zero_U8X) {
+      ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_read_sw_revision_id':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:288:15: error: comparison between pointer and zero character constant error=pointer-compare]
+  if (p_bno055 == BNO055_Zero_U8X) {
+               ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:288:6: note: did you mean to dereference the pointer?
+  if (p_bno055 == BNO055_Zero_U8X) {
+      ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_write_page_id':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:378:15: error: comparison between pointer and zero character constant error=pointer-compare]
+  if (p_bno055 == BNO055_Zero_U8X) {
+               ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:378:6: note: did you mean to dereference the pointer?
+  if (p_bno055 == BNO055_Zero_U8X) {
+      ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_read_accel_x':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:592:15: error: comparison between pointer and zero character constant error=pointer-compare]
+  if (p_bno055 == BNO055_Zero_U8X) {
+               ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:592:6: note: did you mean to dereference the pointer?
+  if (p_bno055 == BNO055_Zero_U8X) {
+      ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_read_accel_y':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:648:15: error: comparison between pointer and zero character constant error=pointer-compare]
+  if (p_bno055 == BNO055_Zero_U8X) {
+               ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:648:6: note: did you mean to dereference the pointer?
+  if (p_bno055 == BNO055_Zero_U8X) {
+      ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_read_accel_z':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:704:15: error: comparison between pointer and zero character constant error=pointer-compare]
+  if (p_bno055 == BNO055_Zero_U8X) {
+               ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:704:6: note: did you mean to dereference the pointer?
+  if (p_bno055 == BNO055_Zero_U8X) {
+      ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_read_accel_xyz':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:760:15: error: comparison between pointer and zero character constant error=pointer-compare]
+  if (p_bno055 == BNO055_Zero_U8X) {
+               ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:760:6: note: did you mean to dereference the pointer?
+  if (p_bno055 == BNO055_Zero_U8X) {
+      ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_read_mag_x':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:828:15: error: comparison between pointer and zero character constant error=pointer-compare]
+  if (p_bno055 == BNO055_Zero_U8X) {
+               ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:828:6: note: did you mean to dereference the pointer?
+  if (p_bno055 == BNO055_Zero_U8X) {
+      ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_read_mag_y':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:879:15: error: comparison between pointer and zero character constant error=pointer-compare]
+  if (p_bno055 == BNO055_Zero_U8X) {
+               ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:879:6: note: did you mean to dereference the pointer?
+  if (p_bno055 == BNO055_Zero_U8X) {
+      ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_read_mag_z':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:935:15: error: comparison between pointer and zero character constant error=pointer-compare]
+  if (p_bno055 == BNO055_Zero_U8X) {
+               ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:935:6: note: did you mean to dereference the pointer?
+  if (p_bno055 == BNO055_Zero_U8X) {
+      ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_read_mag_xyz':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:991:15: error: comparison between pointer and zero character constant error=pointer-compare]
+  if (p_bno055 == BNO055_Zero_U8X) {
+               ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:991:6: note: did you mean to dereference the pointer?
+  if (p_bno055 == BNO055_Zero_U8X) {
+      ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_read_gyro_x':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:1059:15: error: comparison between pointer and zero character constant error=pointer-compare]
+  if (p_bno055 == BNO055_Zero_U8X) {
+               ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:1059:6: note: did you mean to dereference the pointer?
+  if (p_bno055 == BNO055_Zero_U8X) {
+      ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_read_gyro_y':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:1110:15: error: comparison between pointer and zero character constant error=pointer-compare]
+  if (p_bno055 == BNO055_Zero_U8X) {
+               ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:1110:6: note: did you mean to dereference the pointer?
+  if (p_bno055 == BNO055_Zero_U8X) {
+      ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_read_gyro_z':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:1166:15: error: comparison between pointer and zero character constant error=pointer-compare]
+  if (p_bno055 == BNO055_Zero_U8X) {
+               ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:1166:6: note: did you mean to dereference the pointer?
+  if (p_bno055 == BNO055_Zero_U8X) {
+      ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_read_gyro_xyz':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:1222:15: error: comparison between pointer and zero character constant error=pointer-compare]
+  if (p_bno055 == BNO055_Zero_U8X) {
+               ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:1222:6: note: did you mean to dereference the pointer?
+  if (p_bno055 == BNO055_Zero_U8X) {
+      ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_read_euler_h':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:1290:15: error: comparison between pointer and zero character constant error=pointer-compare]
+  if (p_bno055 == BNO055_Zero_U8X) {
+               ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:1290:6: note: did you mean to dereference the pointer?
+  if (p_bno055 == BNO055_Zero_U8X) {
+      ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_read_euler_r':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:1343:15: error: comparison between pointer and zero character constant error=pointer-compare]
+  if (p_bno055 == BNO055_Zero_U8X) {
+               ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:1343:6: note: did you mean to dereference the pointer?
+  if (p_bno055 == BNO055_Zero_U8X) {
+      ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_read_euler_p':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:1399:15: error: comparison between pointer and zero character constant error=pointer-compare]
+  if (p_bno055 == BNO055_Zero_U8X) {
+               ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:1399:6: note: did you mean to dereference the pointer?
+  if (p_bno055 == BNO055_Zero_U8X) {
+      ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_read_euler_hrp':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:1455:15: error: comparison between pointer and zero character constant error=pointer-compare]
+  if (p_bno055 == BNO055_Zero_U8X) {
+               ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:1455:6: note: did you mean to dereference the pointer?
+  if (p_bno055 == BNO055_Zero_U8X) {
+      ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_read_quaternion_w':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:1523:15: error: comparison between pointer and zero character constant error=pointer-compare]
+  if (p_bno055 == BNO055_Zero_U8X) {
+               ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:1523:6: note: did you mean to dereference the pointer?
+  if (p_bno055 == BNO055_Zero_U8X) {
+      ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_read_quaternion_x':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:1574:15: error: comparison between pointer and zero character constant error=pointer-compare]
+  if (p_bno055 == BNO055_Zero_U8X) {
+               ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:1574:6: note: did you mean to dereference the pointer?
+  if (p_bno055 == BNO055_Zero_U8X) {
+      ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_read_quaternion_y':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:1625:15: error: comparison between pointer and zero character constant error=pointer-compare]
+  if (p_bno055 == BNO055_Zero_U8X) {
+               ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:1625:6: note: did you mean to dereference the pointer?
+  if (p_bno055 == BNO055_Zero_U8X) {
+      ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_read_quaternion_z':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:1683:15: error: comparison between pointer and zero character constant error=pointer-compare]
+  if (p_bno055 == BNO055_Zero_U8X) {
+               ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:1683:6: note: did you mean to dereference the pointer?
+  if (p_bno055 == BNO055_Zero_U8X) {
+      ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_read_quaternion_wxyz':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:1740:15: error: comparison between pointer and zero character constant error=pointer-compare]
+  if (p_bno055 == BNO055_Zero_U8X) {
+               ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:1740:6: note: did you mean to dereference the pointer?
+  if (p_bno055 == BNO055_Zero_U8X) {
+      ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_read_linear_accel_x':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:1816:15: error: comparison between pointer and zero character constant error=pointer-compare]
+  if (p_bno055 == BNO055_Zero_U8X) {
+               ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:1816:6: note: did you mean to dereference the pointer?
+  if (p_bno055 == BNO055_Zero_U8X) {
+      ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_read_linear_accel_y':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:1867:15: error: comparison between pointer and zero character constant error=pointer-compare]
+  if (p_bno055 == BNO055_Zero_U8X) {
+               ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:1867:6: note: did you mean to dereference the pointer?
+  if (p_bno055 == BNO055_Zero_U8X) {
+      ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_read_linear_accel_z':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:1923:15: error: comparison between pointer and zero character constant error=pointer-compare]
+  if (p_bno055 == BNO055_Zero_U8X) {
+               ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:1923:6: note: did you mean to dereference the pointer?
+  if (p_bno055 == BNO055_Zero_U8X) {
+      ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_read_linear_accel_xyz':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:1980:15: error: comparison between pointer and zero character constant error=pointer-compare]
+  if (p_bno055 == BNO055_Zero_U8X) {
+               ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:1980:6: note: did you mean to dereference the pointer?
+  if (p_bno055 == BNO055_Zero_U8X) {
+      ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_read_gravity_x':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:2053:15: error: comparison between pointer and zero character constant error=pointer-compare]
+  if (p_bno055 == BNO055_Zero_U8X) {
+               ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:2053:6: note: did you mean to dereference the pointer?
+  if (p_bno055 == BNO055_Zero_U8X) {
+      ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_read_gravity_y':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:2104:15: error: comparison between pointer and zero character constant error=pointer-compare]
+  if (p_bno055 == BNO055_Zero_U8X) {
+               ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:2104:6: note: did you mean to dereference the pointer?
+  if (p_bno055 == BNO055_Zero_U8X) {
+      ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_read_gravity_z':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:2160:15: error: comparison between pointer and zero character constant error=pointer-compare]
+  if (p_bno055 == BNO055_Zero_U8X) {
+               ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:2160:6: note: did you mean to dereference the pointer?
+  if (p_bno055 == BNO055_Zero_U8X) {
+      ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_read_gravity_xyz':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:2217:15: error: comparison between pointer and zero character constant error=pointer-compare]
+  if (p_bno055 == BNO055_Zero_U8X) {
+               ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:2217:6: note: did you mean to dereference the pointer?
+  if (p_bno055 == BNO055_Zero_U8X) {
+      ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_read_temperature_data':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:2290:15: error: comparison between pointer and zero character constant error=pointer-compare]
+  if (p_bno055 == BNO055_Zero_U8X) {
+               ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:2290:6: note: did you mean to dereference the pointer?
+  if (p_bno055 == BNO055_Zero_U8X) {
+      ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_get_magcalib_status':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:2342:15: error: comparison between pointer and zero character constant error=pointer-compare]
+  if (p_bno055 == BNO055_Zero_U8X) {
+               ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:2342:6: note: did you mean to dereference the pointer?
+  if (p_bno055 == BNO055_Zero_U8X) {
+      ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_get_accelcalib_status':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:2395:15: error: comparison between pointer and zero character constant error=pointer-compare]
+  if (p_bno055 == BNO055_Zero_U8X) {
+               ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:2395:6: note: did you mean to dereference the pointer?
+  if (p_bno055 == BNO055_Zero_U8X) {
+      ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_get_gyrocalib_status':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:2448:15: error: comparison between pointer and zero character constant error=pointer-compare]
+  if (p_bno055 == BNO055_Zero_U8X) {
+               ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:2448:6: note: did you mean to dereference the pointer?
+  if (p_bno055 == BNO055_Zero_U8X) {
+      ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_get_syscalib_status':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:2500:15: error: comparison between pointer and zero character constant error=pointer-compare]
+  if (p_bno055 == BNO055_Zero_U8X) {
+               ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:2500:6: note: did you mean to dereference the pointer?
+  if (p_bno055 == BNO055_Zero_U8X) {
+      ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_get_st_accel':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:2554:15: error: comparison between pointer and zero character constant error=pointer-compare]
+  if (p_bno055 == BNO055_Zero_U8X) {
+               ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:2554:6: note: did you mean to dereference the pointer?
+  if (p_bno055 == BNO055_Zero_U8X) {
+      ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_get_st_mag':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:2608:15: error: comparison between pointer and zero character constant error=pointer-compare]
+  if (p_bno055 == BNO055_Zero_U8X) {
+               ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:2608:6: note: did you mean to dereference the pointer?
+  if (p_bno055 == BNO055_Zero_U8X) {
+      ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_get_st_gyro':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:2662:15: error: comparison between pointer and zero character constant error=pointer-compare]
+  if (p_bno055 == BNO055_Zero_U8X) {
+               ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:2662:6: note: did you mean to dereference the pointer?
+  if (p_bno055 == BNO055_Zero_U8X) {
+      ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_get_st_mcu':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:2717:15: error: comparison between pointer and zero character constant error=pointer-compare]
+  if (p_bno055 == BNO055_Zero_U8X) {
+               ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:2717:6: note: did you mean to dereference the pointer?
+  if (p_bno055 == BNO055_Zero_U8X) {
+      ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_get_interrupt_status_gyro_anymotion':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:2773:15: error: comparison between pointer and zero character constant error=pointer-compare]
+  if (p_bno055 == BNO055_Zero_U8X) {
+               ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:2773:6: note: did you mean to dereference the pointer?
+  if (p_bno055 == BNO055_Zero_U8X) {
+      ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_get_interrupt_status_gyro_highrate':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:2829:15: error: comparison between pointer and zero character constant error=pointer-compare]
+  if (p_bno055 == BNO055_Zero_U8X) {
+               ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:2829:6: note: did you mean to dereference the pointer?
+  if (p_bno055 == BNO055_Zero_U8X) {
+      ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_get_interrupt_status_accel_highg':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:2885:15: error: comparison between pointer and zero character constant error=pointer-compare]
+  if (p_bno055 == BNO055_Zero_U8X) {
+               ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:2885:6: note: did you mean to dereference the pointer?
+  if (p_bno055 == BNO055_Zero_U8X) {
+      ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_get_interrupt_status_accel_anymotion':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:2941:15: error: comparison between pointer and zero character constant error=pointer-compare]
+  if (p_bno055 == BNO055_Zero_U8X) {
+               ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:2941:6: note: did you mean to dereference the pointer?
+  if (p_bno055 == BNO055_Zero_U8X) {
+      ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_get_interrupt_status_accel_nomotion':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:2996:15: error: comparison between pointer and zero character constant error=pointer-compare]
+  if (p_bno055 == BNO055_Zero_U8X) {
+               ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:2996:6: note: did you mean to dereference the pointer?
+  if (p_bno055 == BNO055_Zero_U8X) {
+      ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_get_system_status_code':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:3051:15: error: comparison between pointer and zero character constant error=pointer-compare]
+  if (p_bno055 == BNO055_Zero_U8X) {
+               ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:3051:6: note: did you mean to dereference the pointer?
+  if (p_bno055 == BNO055_Zero_U8X) {
+      ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_get_system_error_code':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:3107:15: error: comparison between pointer and zero character constant error=pointer-compare]
+  if (p_bno055 == BNO055_Zero_U8X) {
+               ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:3107:6: note: did you mean to dereference the pointer?
+  if (p_bno055 == BNO055_Zero_U8X) {
+      ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_get_accel_unit':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:3164:15: error: comparison between pointer and zero character constant error=pointer-compare]
+  if (p_bno055 == BNO055_Zero_U8X) {
+               ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:3164:6: note: did you mean to dereference the pointer?
+  if (p_bno055 == BNO055_Zero_U8X) {
+      ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_set_accel_unit':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:3221:14: error: comparison between pointer and zero character constant error=pointer-compare]
+ if (p_bno055 == BNO055_Zero_U8X) {
+              ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:3221:5: note: did you mean to dereference the pointer?
+ if (p_bno055 == BNO055_Zero_U8X) {
+     ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:3226:3: error: this 'if' clause does not guard... error=misleading-indentation]
+   if (prev_opmode != OPERATION_MODE_CONFIG)
+   ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:3229:4: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+    if (status == SUCCESS) {
+    ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_get_gyro_unit':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:3292:15: error: comparison between pointer and zero character constant error=pointer-compare]
+  if (p_bno055 == BNO055_Zero_U8X) {
+               ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:3292:6: note: did you mean to dereference the pointer?
+  if (p_bno055 == BNO055_Zero_U8X) {
+      ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_set_gyro_unit':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:3348:14: error: comparison between pointer and zero character constant error=pointer-compare]
+ if (p_bno055 == BNO055_Zero_U8X) {
+              ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:3348:5: note: did you mean to dereference the pointer?
+ if (p_bno055 == BNO055_Zero_U8X) {
+     ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:3353:3: error: this 'if' clause does not guard... error=misleading-indentation]
+   if (prev_opmode != OPERATION_MODE_CONFIG)
+   ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:3356:4: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+    if (status == SUCCESS) {
+    ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_get_euler_unit':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:3420:15: error: comparison between pointer and zero character constant error=pointer-compare]
+  if (p_bno055 == BNO055_Zero_U8X) {
+               ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:3420:6: note: did you mean to dereference the pointer?
+  if (p_bno055 == BNO055_Zero_U8X) {
+      ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_set_euler_unit':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:3477:14: error: comparison between pointer and zero character constant error=pointer-compare]
+ if (p_bno055 == BNO055_Zero_U8X) {
+              ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:3477:5: note: did you mean to dereference the pointer?
+ if (p_bno055 == BNO055_Zero_U8X) {
+     ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:3482:4: error: this 'if' clause does not guard... error=misleading-indentation]
+    if (prev_opmode != OPERATION_MODE_CONFIG)
+    ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:3485:5: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+     if (status == SUCCESS) {
+     ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_get_tilt_unit':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:3548:15: error: comparison between pointer and zero character constant error=pointer-compare]
+  if (p_bno055 == BNO055_Zero_U8X) {
+               ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:3548:6: note: did you mean to dereference the pointer?
+  if (p_bno055 == BNO055_Zero_U8X) {
+      ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_set_tilt_unit':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:3604:14: error: comparison between pointer and zero character constant error=pointer-compare]
+ if (p_bno055 == BNO055_Zero_U8X) {
+              ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:3604:5: note: did you mean to dereference the pointer?
+ if (p_bno055 == BNO055_Zero_U8X) {
+     ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:3609:4: error: this 'if' clause does not guard... error=misleading-indentation]
+    if (prev_opmode != OPERATION_MODE_CONFIG)
+    ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:3612:5: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+     if (status == SUCCESS) {
+     ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_get_temperature_unit':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:3675:15: error: comparison between pointer and zero character constant error=pointer-compare]
+  if (p_bno055 == BNO055_Zero_U8X) {
+               ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:3675:6: note: did you mean to dereference the pointer?
+  if (p_bno055 == BNO055_Zero_U8X) {
+      ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_set_temperature_unit':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:3732:14: error: comparison between pointer and zero character constant error=pointer-compare]
+ if (p_bno055 == BNO055_Zero_U8X) {
+              ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:3732:5: note: did you mean to dereference the pointer?
+ if (p_bno055 == BNO055_Zero_U8X) {
+     ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:3737:4: error: this 'if' clause does not guard... error=misleading-indentation]
+    if (prev_opmode != OPERATION_MODE_CONFIG)
+    ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:3740:5: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+     if (status == SUCCESS) {
+     ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_get_data_output_format':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:3801:15: error: comparison between pointer and zero character constant error=pointer-compare]
+  if (p_bno055 == BNO055_Zero_U8X) {
+               ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:3801:6: note: did you mean to dereference the pointer?
+  if (p_bno055 == BNO055_Zero_U8X) {
+      ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_set_data_output_format':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:3859:14: error: comparison between pointer and zero character constant error=pointer-compare]
+ if (p_bno055 == BNO055_Zero_U8X) {
+              ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:3859:5: note: did you mean to dereference the pointer?
+ if (p_bno055 == BNO055_Zero_U8X) {
+     ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:3864:4: error: this 'if' clause does not guard... error=misleading-indentation]
+    if (prev_opmode != OPERATION_MODE_CONFIG)
+    ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:3867:5: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+     if (status == SUCCESS) {
+     ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_get_accel_data_select':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:3930:15: error: comparison between pointer and zero character constant error=pointer-compare]
+  if (p_bno055 == BNO055_Zero_U8X) {
+               ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:3930:6: note: did you mean to dereference the pointer?
+  if (p_bno055 == BNO055_Zero_U8X) {
+      ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_set_accel_data_select':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:3986:15: error: comparison between pointer and zero character constant error=pointer-compare]
+  if (p_bno055 == BNO055_Zero_U8X) {
+               ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:3986:6: note: did you mean to dereference the pointer?
+  if (p_bno055 == BNO055_Zero_U8X) {
+      ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_get_mag_data_select':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:4043:15: error: comparison between pointer and zero character constant error=pointer-compare]
+  if (p_bno055 == BNO055_Zero_U8X) {
+               ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:4043:6: note: did you mean to dereference the pointer?
+  if (p_bno055 == BNO055_Zero_U8X) {
+      ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_set_mag_data_select':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:4099:15: error: comparison between pointer and zero character constant error=pointer-compare]
+  if (p_bno055 == BNO055_Zero_U8X) {
+               ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:4099:6: note: did you mean to dereference the pointer?
+  if (p_bno055 == BNO055_Zero_U8X) {
+      ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_get_gyro_data_select':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:4156:15: error: comparison between pointer and zero character constant error=pointer-compare]
+  if (p_bno055 == BNO055_Zero_U8X) {
+               ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:4156:6: note: did you mean to dereference the pointer?
+  if (p_bno055 == BNO055_Zero_U8X) {
+      ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_set_gyro_data_select':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:4212:15: error: comparison between pointer and zero character constant error=pointer-compare]
+  if (p_bno055 == BNO055_Zero_U8X) {
+               ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:4212:6: note: did you mean to dereference the pointer?
+  if (p_bno055 == BNO055_Zero_U8X) {
+      ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_get_euler_data_select':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:4269:15: error: comparison between pointer and zero character constant error=pointer-compare]
+  if (p_bno055 == BNO055_Zero_U8X) {
+               ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:4269:6: note: did you mean to dereference the pointer?
+  if (p_bno055 == BNO055_Zero_U8X) {
+      ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_set_euler_data_select':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:4325:15: error: comparison between pointer and zero character constant error=pointer-compare]
+  if (p_bno055 == BNO055_Zero_U8X) {
+               ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:4325:6: note: did you mean to dereference the pointer?
+  if (p_bno055 == BNO055_Zero_U8X) {
+      ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_get_quaternion_data_select':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:4382:15: error: comparison between pointer and zero character constant error=pointer-compare]
+  if (p_bno055 == BNO055_Zero_U8X) {
+               ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:4382:6: note: did you mean to dereference the pointer?
+  if (p_bno055 == BNO055_Zero_U8X) {
+      ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_set_quaternion_data_select':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:4438:15: error: comparison between pointer and zero character constant error=pointer-compare]
+  if (p_bno055 == BNO055_Zero_U8X) {
+               ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:4438:6: note: did you mean to dereference the pointer?
+  if (p_bno055 == BNO055_Zero_U8X) {
+      ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_get_linear_accel_data_select':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:4495:15: error: comparison between pointer and zero character constant error=pointer-compare]
+  if (p_bno055 == BNO055_Zero_U8X) {
+               ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:4495:6: note: did you mean to dereference the pointer?
+  if (p_bno055 == BNO055_Zero_U8X) {
+      ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_set_linear_accel_data_select':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:4552:15: error: comparison between pointer and zero character constant error=pointer-compare]
+  if (p_bno055 == BNO055_Zero_U8X) {
+               ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:4552:6: note: did you mean to dereference the pointer?
+  if (p_bno055 == BNO055_Zero_U8X) {
+      ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_get_gravity_data_select':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:4609:15: error: comparison between pointer and zero character constant error=pointer-compare]
+  if (p_bno055 == BNO055_Zero_U8X) {
+               ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:4609:6: note: did you mean to dereference the pointer?
+  if (p_bno055 == BNO055_Zero_U8X) {
+      ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_set_gravity_data_select':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:4665:15: error: comparison between pointer and zero character constant error=pointer-compare]
+  if (p_bno055 == BNO055_Zero_U8X) {
+               ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:4665:6: note: did you mean to dereference the pointer?
+  if (p_bno055 == BNO055_Zero_U8X) {
+      ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_get_temperature_data_select':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:4722:15: error: comparison between pointer and zero character constant error=pointer-compare]
+  if (p_bno055 == BNO055_Zero_U8X) {
+               ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:4722:6: note: did you mean to dereference the pointer?
+  if (p_bno055 == BNO055_Zero_U8X) {
+      ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_set_temperature_data_select':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:4778:15: error: comparison between pointer and zero character constant error=pointer-compare]
+  if (p_bno055 == BNO055_Zero_U8X) {
+               ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:4778:6: note: did you mean to dereference the pointer?
+  if (p_bno055 == BNO055_Zero_U8X) {
+      ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_get_data_output_rate':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:4842:15: error: comparison between pointer and zero character constant error=pointer-compare]
+  if (p_bno055 == BNO055_Zero_U8X) {
+               ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:4842:6: note: did you mean to dereference the pointer?
+  if (p_bno055 == BNO055_Zero_U8X) {
+      ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_set_data_output_rate':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:4906:14: error: comparison between pointer and zero character constant error=pointer-compare]
+ if (p_bno055 == BNO055_Zero_U8X) {
+              ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:4906:5: note: did you mean to dereference the pointer?
+ if (p_bno055 == BNO055_Zero_U8X) {
+     ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:4911:4: error: this 'if' clause does not guard... error=misleading-indentation]
+    if (prev_opmode != OPERATION_MODE_CONFIG)
+    ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:4914:5: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+     if (status == SUCCESS) {
+     ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_get_operation_mode':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:4994:15: error: comparison between pointer and zero character constant error=pointer-compare]
+  if (p_bno055 == BNO055_Zero_U8X) {
+               ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:4994:6: note: did you mean to dereference the pointer?
+  if (p_bno055 == BNO055_Zero_U8X) {
+      ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_set_operation_mode':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:5066:14: error: comparison between pointer and zero character constant error=pointer-compare]
+ if (p_bno055 == BNO055_Zero_U8X) {
+              ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:5066:5: note: did you mean to dereference the pointer?
+ if (p_bno055 == BNO055_Zero_U8X) {
+     ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_get_powermode':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:5148:15: error: comparison between pointer and zero character constant error=pointer-compare]
+  if (p_bno055 == BNO055_Zero_U8X) {
+               ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:5148:6: note: did you mean to dereference the pointer?
+  if (p_bno055 == BNO055_Zero_U8X) {
+      ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_set_powermode':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:5204:14: error: comparison between pointer and zero character constant error=pointer-compare]
+ if (p_bno055 == BNO055_Zero_U8X) {
+              ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:5204:5: note: did you mean to dereference the pointer?
+ if (p_bno055 == BNO055_Zero_U8X) {
+     ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:5209:4: error: this 'if' clause does not guard... error=misleading-indentation]
+    if (prev_opmode != OPERATION_MODE_CONFIG)
+    ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:5212:5: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+     if (status == SUCCESS) {
+     ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_get_reset_int':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:5273:15: error: comparison between pointer and zero character constant error=pointer-compare]
+  if (p_bno055 == BNO055_Zero_U8X) {
+               ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:5273:6: note: did you mean to dereference the pointer?
+  if (p_bno055 == BNO055_Zero_U8X) {
+      ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_set_reset_int':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:5323:15: error: comparison between pointer and zero character constant error=pointer-compare]
+  if (p_bno055 == BNO055_Zero_U8X) {
+               ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:5323:6: note: did you mean to dereference the pointer?
+  if (p_bno055 == BNO055_Zero_U8X) {
+      ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_get_reset_sys':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:5380:15: error: comparison between pointer and zero character constant error=pointer-compare]
+  if (p_bno055 == BNO055_Zero_U8X) {
+               ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:5380:6: note: did you mean to dereference the pointer?
+  if (p_bno055 == BNO055_Zero_U8X) {
+      ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_set_reset_sys':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:5430:15: error: comparison between pointer and zero character constant error=pointer-compare]
+  if (p_bno055 == BNO055_Zero_U8X) {
+               ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:5430:6: note: did you mean to dereference the pointer?
+  if (p_bno055 == BNO055_Zero_U8X) {
+      ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_get_selftest':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:5487:15: error: comparison between pointer and zero character constant error=pointer-compare]
+  if (p_bno055 == BNO055_Zero_U8X) {
+               ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:5487:6: note: did you mean to dereference the pointer?
+  if (p_bno055 == BNO055_Zero_U8X) {
+      ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_set_selftest':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:5540:14: error: comparison between pointer and zero character constant error=pointer-compare]
+ if (p_bno055 == BNO055_Zero_U8X) {
+              ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:5540:5: note: did you mean to dereference the pointer?
+ if (p_bno055 == BNO055_Zero_U8X) {
+     ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:5545:4: error: this 'if' clause does not guard... error=misleading-indentation]
+    if (prev_opmode != OPERATION_MODE_CONFIG)
+    ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:5548:5: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+     if (status == SUCCESS) {
+     ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_get_temp_source':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:5609:15: error: comparison between pointer and zero character constant error=pointer-compare]
+  if (p_bno055 == BNO055_Zero_U8X) {
+               ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:5609:6: note: did you mean to dereference the pointer?
+  if (p_bno055 == BNO055_Zero_U8X) {
+      ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_set_temp_source':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:5662:14: error: comparison between pointer and zero character constant error=pointer-compare]
+ if (p_bno055 == BNO055_Zero_U8X) {
+              ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:5662:5: note: did you mean to dereference the pointer?
+ if (p_bno055 == BNO055_Zero_U8X) {
+     ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:5667:4: error: this 'if' clause does not guard... error=misleading-indentation]
+    if (prev_opmode != OPERATION_MODE_CONFIG)
+    ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:5670:5: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+     if (status == SUCCESS) {
+     ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_get_axis_remap_value':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:5749:15: error: comparison between pointer and zero character constant error=pointer-compare]
+  if (p_bno055 == BNO055_Zero_U8X) {
+               ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:5749:6: note: did you mean to dereference the pointer?
+  if (p_bno055 == BNO055_Zero_U8X) {
+      ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_set_axis_remap_value':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:5824:14: error: comparison between pointer and zero character constant error=pointer-compare]
+ if (p_bno055 == BNO055_Zero_U8X) {
+              ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:5824:5: note: did you mean to dereference the pointer?
+ if (p_bno055 == BNO055_Zero_U8X) {
+     ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:5829:4: error: this 'if' clause does not guard... error=misleading-indentation]
+    if (prev_opmode != OPERATION_MODE_CONFIG)
+    ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:5832:5: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+     if (status == SUCCESS) {
+     ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_get_x_remap_sign':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:5923:15: error: comparison between pointer and zero character constant error=pointer-compare]
+  if (p_bno055 == BNO055_Zero_U8X) {
+               ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:5923:6: note: did you mean to dereference the pointer?
+  if (p_bno055 == BNO055_Zero_U8X) {
+      ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_set_x_remap_sign':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:5977:14: error: comparison between pointer and zero character constant error=pointer-compare]
+ if (p_bno055 == BNO055_Zero_U8X) {
+              ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:5977:5: note: did you mean to dereference the pointer?
+ if (p_bno055 == BNO055_Zero_U8X) {
+     ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:5982:4: error: this 'if' clause does not guard... error=misleading-indentation]
+    if (prev_opmode != OPERATION_MODE_CONFIG)
+    ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:5985:5: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+     if (status == SUCCESS) {
+     ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_get_y_remap_sign':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:6048:15: error: comparison between pointer and zero character constant error=pointer-compare]
+  if (p_bno055 == BNO055_Zero_U8X) {
+               ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:6048:6: note: did you mean to dereference the pointer?
+  if (p_bno055 == BNO055_Zero_U8X) {
+      ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_set_y_remap_sign':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:6102:14: error: comparison between pointer and zero character constant error=pointer-compare]
+ if (p_bno055 == BNO055_Zero_U8X) {
+              ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:6102:5: note: did you mean to dereference the pointer?
+ if (p_bno055 == BNO055_Zero_U8X) {
+     ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:6107:4: error: this 'if' clause does not guard... error=misleading-indentation]
+    if (prev_opmode != OPERATION_MODE_CONFIG)
+    ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:6110:5: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+     if (status == SUCCESS) {
+     ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_get_z_remap_sign':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:6173:15: error: comparison between pointer and zero character constant error=pointer-compare]
+  if (p_bno055 == BNO055_Zero_U8X) {
+               ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:6173:6: note: did you mean to dereference the pointer?
+  if (p_bno055 == BNO055_Zero_U8X) {
+      ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_set_z_remap_sign':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:6227:14: error: comparison between pointer and zero character constant error=pointer-compare]
+ if (p_bno055 == BNO055_Zero_U8X) {
+              ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:6227:5: note: did you mean to dereference the pointer?
+ if (p_bno055 == BNO055_Zero_U8X) {
+     ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:6232:4: error: this 'if' clause does not guard... error=misleading-indentation]
+    if (prev_opmode != OPERATION_MODE_CONFIG)
+    ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:6235:5: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+     if (status == SUCCESS) {
+     ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_read_sic_matrix_zero':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:6298:15: error: comparison between pointer and zero character constant error=pointer-compare]
+  if (p_bno055 == BNO055_Zero_U8X) {
+               ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:6298:6: note: did you mean to dereference the pointer?
+  if (p_bno055 == BNO055_Zero_U8X) {
+      ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_write_sic_matrix_zero':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:6359:14: error: comparison between pointer and zero character constant error=pointer-compare]
+ if (p_bno055 == BNO055_Zero_U8X) {
+              ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:6359:5: note: did you mean to dereference the pointer?
+ if (p_bno055 == BNO055_Zero_U8X) {
+     ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:6364:4: error: this 'if' clause does not guard... error=misleading-indentation]
+    if (prev_opmode != OPERATION_MODE_CONFIG)
+    ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:6367:5: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+     if (status == SUCCESS) {
+     ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_read_sic_matrix_one':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:6451:15: error: comparison between pointer and zero character constant error=pointer-compare]
+  if (p_bno055 == BNO055_Zero_U8X) {
+               ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:6451:6: note: did you mean to dereference the pointer?
+  if (p_bno055 == BNO055_Zero_U8X) {
+      ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_write_sic_matrix_one':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:6511:14: error: comparison between pointer and zero character constant error=pointer-compare]
+ if (p_bno055 == BNO055_Zero_U8X) {
+              ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:6511:5: note: did you mean to dereference the pointer?
+ if (p_bno055 == BNO055_Zero_U8X) {
+     ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:6516:4: error: this 'if' clause does not guard... error=misleading-indentation]
+    if (prev_opmode != OPERATION_MODE_CONFIG)
+    ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:6519:5: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+     if (status == SUCCESS) {
+     ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_read_sic_matrix_two':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:6601:15: error: comparison between pointer and zero character constant error=pointer-compare]
+  if (p_bno055 == BNO055_Zero_U8X) {
+               ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:6601:6: note: did you mean to dereference the pointer?
+  if (p_bno055 == BNO055_Zero_U8X) {
+      ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_write_sic_matrix_two':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:6661:14: error: comparison between pointer and zero character constant error=pointer-compare]
+ if (p_bno055 == BNO055_Zero_U8X) {
+              ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:6661:5: note: did you mean to dereference the pointer?
+ if (p_bno055 == BNO055_Zero_U8X) {
+     ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:6666:4: error: this 'if' clause does not guard... error=misleading-indentation]
+    if (prev_opmode != OPERATION_MODE_CONFIG)
+    ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:6669:5: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+     if (status == SUCCESS) {
+     ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_read_sic_matrix_three':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:6751:15: error: comparison between pointer and zero character constant error=pointer-compare]
+  if (p_bno055 == BNO055_Zero_U8X) {
+               ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:6751:6: note: did you mean to dereference the pointer?
+  if (p_bno055 == BNO055_Zero_U8X) {
+      ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_write_sic_matrix_three':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:6811:14: error: comparison between pointer and zero character constant error=pointer-compare]
+ if (p_bno055 == BNO055_Zero_U8X) {
+              ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:6811:5: note: did you mean to dereference the pointer?
+ if (p_bno055 == BNO055_Zero_U8X) {
+     ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:6816:4: error: this 'if' clause does not guard... error=misleading-indentation]
+    if (prev_opmode != OPERATION_MODE_CONFIG)
+    ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:6819:5: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+     if (status == SUCCESS) {
+     ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_read_sic_matrix_four':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:6904:15: error: comparison between pointer and zero character constant error=pointer-compare]
+  if (p_bno055 == BNO055_Zero_U8X) {
+               ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:6904:6: note: did you mean to dereference the pointer?
+  if (p_bno055 == BNO055_Zero_U8X) {
+      ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_write_sic_matrix_four':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:6964:14: error: comparison between pointer and zero character constant error=pointer-compare]
+ if (p_bno055 == BNO055_Zero_U8X) {
+              ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:6964:5: note: did you mean to dereference the pointer?
+ if (p_bno055 == BNO055_Zero_U8X) {
+     ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:6969:4: error: this 'if' clause does not guard... error=misleading-indentation]
+    if (prev_opmode != OPERATION_MODE_CONFIG)
+    ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:6972:5: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+     if (status == SUCCESS) {
+     ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_read_sic_matrix_five':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:7058:15: error: comparison between pointer and zero character constant error=pointer-compare]
+  if (p_bno055 == BNO055_Zero_U8X) {
+               ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:7058:6: note: did you mean to dereference the pointer?
+  if (p_bno055 == BNO055_Zero_U8X) {
+      ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_write_sic_matrix_five':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:7118:14: error: comparison between pointer and zero character constant error=pointer-compare]
+ if (p_bno055 == BNO055_Zero_U8X) {
+              ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:7118:5: note: did you mean to dereference the pointer?
+ if (p_bno055 == BNO055_Zero_U8X) {
+     ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:7123:4: error: this 'if' clause does not guard... error=misleading-indentation]
+    if (prev_opmode != OPERATION_MODE_CONFIG)
+    ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:7126:5: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+     if (status == SUCCESS) {
+     ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_read_sic_matrix_six':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:7211:15: error: comparison between pointer and zero character constant error=pointer-compare]
+  if (p_bno055 == BNO055_Zero_U8X) {
+               ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:7211:6: note: did you mean to dereference the pointer?
+  if (p_bno055 == BNO055_Zero_U8X) {
+      ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_write_sic_matrix_six':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:7271:14: error: comparison between pointer and zero character constant error=pointer-compare]
+ if (p_bno055 == BNO055_Zero_U8X) {
+              ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:7271:5: note: did you mean to dereference the pointer?
+ if (p_bno055 == BNO055_Zero_U8X) {
+     ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:7276:4: error: this 'if' clause does not guard... error=misleading-indentation]
+    if (prev_opmode != OPERATION_MODE_CONFIG)
+    ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:7279:5: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+     if (status == SUCCESS) {
+     ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_read_sic_matrix_seven':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:7365:15: error: comparison between pointer and zero character constant error=pointer-compare]
+  if (p_bno055 == BNO055_Zero_U8X) {
+               ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:7365:6: note: did you mean to dereference the pointer?
+  if (p_bno055 == BNO055_Zero_U8X) {
+      ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_write_sic_matrix_seven':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:7425:14: error: comparison between pointer and zero character constant error=pointer-compare]
+ if (p_bno055 == BNO055_Zero_U8X) {
+              ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:7425:5: note: did you mean to dereference the pointer?
+ if (p_bno055 == BNO055_Zero_U8X) {
+     ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:7430:4: error: this 'if' clause does not guard... error=misleading-indentation]
+    if (prev_opmode != OPERATION_MODE_CONFIG)
+    ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:7433:5: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+     if (status == SUCCESS) {
+     ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_read_sic_matrix_eight':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:7519:15: error: comparison between pointer and zero character constant error=pointer-compare]
+  if (p_bno055 == BNO055_Zero_U8X) {
+               ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:7519:6: note: did you mean to dereference the pointer?
+  if (p_bno055 == BNO055_Zero_U8X) {
+      ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_write_sic_matrix_eight':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:7579:14: error: comparison between pointer and zero character constant error=pointer-compare]
+ if (p_bno055 == BNO055_Zero_U8X) {
+              ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:7579:5: note: did you mean to dereference the pointer?
+ if (p_bno055 == BNO055_Zero_U8X) {
+     ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:7584:4: error: this 'if' clause does not guard... error=misleading-indentation]
+    if (prev_opmode != OPERATION_MODE_CONFIG)
+    ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:7587:5: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+     if (status == SUCCESS) {
+     ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_read_accel_offset_x_axis':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:7673:15: error: comparison between pointer and zero character constant error=pointer-compare]
+  if (p_bno055 == BNO055_Zero_U8X) {
+               ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:7673:6: note: did you mean to dereference the pointer?
+  if (p_bno055 == BNO055_Zero_U8X) {
+      ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_write_accel_offset_x_axis':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:7733:14: error: comparison between pointer and zero character constant error=pointer-compare]
+ if (p_bno055 == BNO055_Zero_U8X) {
+              ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:7733:5: note: did you mean to dereference the pointer?
+ if (p_bno055 == BNO055_Zero_U8X) {
+     ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:7738:4: error: this 'if' clause does not guard... error=misleading-indentation]
+    if (prev_opmode != OPERATION_MODE_CONFIG)
+    ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:7741:5: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+     if (status == SUCCESS) {
+     ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_read_accel_offset_y_axis':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:7826:15: error: comparison between pointer and zero character constant error=pointer-compare]
+  if (p_bno055 == BNO055_Zero_U8X) {
+               ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:7826:6: note: did you mean to dereference the pointer?
+  if (p_bno055 == BNO055_Zero_U8X) {
+      ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_write_accel_offset_y_axis':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:7887:14: error: comparison between pointer and zero character constant error=pointer-compare]
+ if (p_bno055 == BNO055_Zero_U8X) {
+              ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:7887:5: note: did you mean to dereference the pointer?
+ if (p_bno055 == BNO055_Zero_U8X) {
+     ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:7892:4: error: this 'if' clause does not guard... error=misleading-indentation]
+    if (prev_opmode != OPERATION_MODE_CONFIG)
+    ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:7895:5: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+     if (status == SUCCESS) {
+     ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_read_accel_offset_z_axis':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:7980:15: error: comparison between pointer and zero character constant error=pointer-compare]
+  if (p_bno055 == BNO055_Zero_U8X) {
+               ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:7980:6: note: did you mean to dereference the pointer?
+  if (p_bno055 == BNO055_Zero_U8X) {
+      ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_write_accel_offset_z_axis':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:8040:14: error: comparison between pointer and zero character constant error=pointer-compare]
+ if (p_bno055 == BNO055_Zero_U8X) {
+              ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:8040:5: note: did you mean to dereference the pointer?
+ if (p_bno055 == BNO055_Zero_U8X) {
+     ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:8045:4: error: this 'if' clause does not guard... error=misleading-indentation]
+    if (prev_opmode != OPERATION_MODE_CONFIG)
+    ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:8048:5: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+     if (status == SUCCESS) {
+     ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_read_mag_offset_x_axis':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:8131:15: error: comparison between pointer and zero character constant error=pointer-compare]
+  if (p_bno055 == BNO055_Zero_U8X) {
+               ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:8131:6: note: did you mean to dereference the pointer?
+  if (p_bno055 == BNO055_Zero_U8X) {
+      ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_write_mag_offset_x_axis':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:8191:14: error: comparison between pointer and zero character constant error=pointer-compare]
+ if (p_bno055 == BNO055_Zero_U8X) {
+              ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:8191:5: note: did you mean to dereference the pointer?
+ if (p_bno055 == BNO055_Zero_U8X) {
+     ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:8196:4: error: this 'if' clause does not guard... error=misleading-indentation]
+    if (prev_opmode != OPERATION_MODE_CONFIG)
+    ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:8199:5: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+     if (status == SUCCESS) {
+     ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_read_mag_offset_y_axis':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:8281:15: error: comparison between pointer and zero character constant error=pointer-compare]
+  if (p_bno055 == BNO055_Zero_U8X) {
+               ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:8281:6: note: did you mean to dereference the pointer?
+  if (p_bno055 == BNO055_Zero_U8X) {
+      ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_write_mag_offset_y_axis':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:8341:14: error: comparison between pointer and zero character constant error=pointer-compare]
+ if (p_bno055 == BNO055_Zero_U8X) {
+              ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:8341:5: note: did you mean to dereference the pointer?
+ if (p_bno055 == BNO055_Zero_U8X) {
+     ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:8346:4: error: this 'if' clause does not guard... error=misleading-indentation]
+    if (prev_opmode != OPERATION_MODE_CONFIG)
+    ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:8349:5: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+     if (status == SUCCESS) {
+     ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_read_mag_offset_z_axis':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:8430:15: error: comparison between pointer and zero character constant error=pointer-compare]
+  if (p_bno055 == BNO055_Zero_U8X) {
+               ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:8430:6: note: did you mean to dereference the pointer?
+  if (p_bno055 == BNO055_Zero_U8X) {
+      ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_write_mag_offset_z_axis':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:8490:14: error: comparison between pointer and zero character constant error=pointer-compare]
+ if (p_bno055 == BNO055_Zero_U8X) {
+              ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:8490:5: note: did you mean to dereference the pointer?
+ if (p_bno055 == BNO055_Zero_U8X) {
+     ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:8495:4: error: this 'if' clause does not guard... error=misleading-indentation]
+    if (prev_opmode != OPERATION_MODE_CONFIG)
+    ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:8498:5: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+     if (status == SUCCESS) {
+     ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_read_gyro_offset_x_axis':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:8579:15: error: comparison between pointer and zero character constant error=pointer-compare]
+  if (p_bno055 == BNO055_Zero_U8X) {
+               ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:8579:6: note: did you mean to dereference the pointer?
+  if (p_bno055 == BNO055_Zero_U8X) {
+      ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_write_gyro_offset_x_axis':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:8639:14: error: comparison between pointer and zero character constant error=pointer-compare]
+ if (p_bno055 == BNO055_Zero_U8X) {
+              ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:8639:5: note: did you mean to dereference the pointer?
+ if (p_bno055 == BNO055_Zero_U8X) {
+     ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:8644:4: error: this 'if' clause does not guard... error=misleading-indentation]
+    if (prev_opmode != OPERATION_MODE_CONFIG)
+    ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:8647:5: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+     if (status == SUCCESS) {
+     ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_read_gyro_offset_y_axis':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:8728:15: error: comparison between pointer and zero character constant error=pointer-compare]
+  if (p_bno055 == BNO055_Zero_U8X) {
+               ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:8728:6: note: did you mean to dereference the pointer?
+  if (p_bno055 == BNO055_Zero_U8X) {
+      ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_write_gyro_offset_y_axis':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:8788:14: error: comparison between pointer and zero character constant error=pointer-compare]
+ if (p_bno055 == BNO055_Zero_U8X) {
+              ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:8788:5: note: did you mean to dereference the pointer?
+ if (p_bno055 == BNO055_Zero_U8X) {
+     ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:8793:4: error: this 'if' clause does not guard... error=misleading-indentation]
+    if (prev_opmode != OPERATION_MODE_CONFIG)
+    ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:8796:5: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+     if (status == SUCCESS) {
+     ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_read_gyro_offset_z_axis':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:8877:15: error: comparison between pointer and zero character constant error=pointer-compare]
+  if (p_bno055 == BNO055_Zero_U8X) {
+               ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:8877:6: note: did you mean to dereference the pointer?
+  if (p_bno055 == BNO055_Zero_U8X) {
+      ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_write_gyro_offset_z_axis':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:8937:14: error: comparison between pointer and zero character constant error=pointer-compare]
+ if (p_bno055 == BNO055_Zero_U8X) {
+              ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:8937:5: note: did you mean to dereference the pointer?
+ if (p_bno055 == BNO055_Zero_U8X) {
+     ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:8942:4: error: this 'if' clause does not guard... error=misleading-indentation]
+    if (prev_opmode != OPERATION_MODE_CONFIG)
+    ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:8945:5: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+     if (status == SUCCESS) {
+     ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_get_accel_range':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:9033:15: error: comparison between pointer and zero character constant error=pointer-compare]
+  if (p_bno055 == BNO055_Zero_U8X) {
+               ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:9033:6: note: did you mean to dereference the pointer?
+  if (p_bno055 == BNO055_Zero_U8X) {
+      ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_set_accel_range':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:9097:14: error: comparison between pointer and zero character constant error=pointer-compare]
+ if (p_bno055 == BNO055_Zero_U8X) {
+              ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:9097:5: note: did you mean to dereference the pointer?
+ if (p_bno055 == BNO055_Zero_U8X) {
+     ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:9102:2: error: this 'if' clause does not guard... error=misleading-indentation]
+  if (prev_opmode != OPERATION_MODE_CONFIG)
+  ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:9105:3: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+   if (status == SUCCESS) {
+   ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_get_accel_bandwidth':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:9188:15: error: comparison between pointer and zero character constant error=pointer-compare]
+  if (p_bno055 == BNO055_Zero_U8X) {
+               ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:9188:6: note: did you mean to dereference the pointer?
+  if (p_bno055 == BNO055_Zero_U8X) {
+      ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_set_accel_bandwidth':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:9253:14: error: comparison between pointer and zero character constant error=pointer-compare]
+ if (p_bno055 == BNO055_Zero_U8X) {
+              ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:9253:5: note: did you mean to dereference the pointer?
+ if (p_bno055 == BNO055_Zero_U8X) {
+     ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:9258:2: error: this 'if' clause does not guard... error=misleading-indentation]
+  if (prev_opmode != OPERATION_MODE_CONFIG)
+  ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:9261:3: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+   if (status == SUCCESS) {
+   ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_get_accel_powermode':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:9340:15: error: comparison between pointer and zero character constant error=pointer-compare]
+  if (p_bno055 == BNO055_Zero_U8X) {
+               ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:9340:6: note: did you mean to dereference the pointer?
+  if (p_bno055 == BNO055_Zero_U8X) {
+      ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_set_accel_powermode':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:9404:14: error: comparison between pointer and zero character constant error=pointer-compare]
+ if (p_bno055 == BNO055_Zero_U8X) {
+              ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:9404:5: note: did you mean to dereference the pointer?
+ if (p_bno055 == BNO055_Zero_U8X) {
+     ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:9409:3: error: this 'if' clause does not guard... error=misleading-indentation]
+   if (prev_opmode != OPERATION_MODE_CONFIG)
+   ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:9412:4: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+    if (status == SUCCESS) {
+    ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_get_mag_data_outputrate':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:9496:15: error: comparison between pointer and zero character constant error=pointer-compare]
+  if (p_bno055 == BNO055_Zero_U8X) {
+               ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:9496:6: note: did you mean to dereference the pointer?
+  if (p_bno055 == BNO055_Zero_U8X) {
+      ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_set_mag_data_outrate':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:9563:14: error: comparison between pointer and zero character constant error=pointer-compare]
+ if (p_bno055 == BNO055_Zero_U8X) {
+              ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:9563:5: note: did you mean to dereference the pointer?
+ if (p_bno055 == BNO055_Zero_U8X) {
+     ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:9568:2: error: this 'if' clause does not guard... error=misleading-indentation]
+  if (prev_opmode != OPERATION_MODE_CONFIG)
+  ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:9571:3: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+   if (status == SUCCESS) {
+   ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_get_mag_operation_mode':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:9652:15: error: comparison between pointer and zero character constant error=pointer-compare]
+  if (p_bno055 == BNO055_Zero_U8X) {
+               ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:9652:6: note: did you mean to dereference the pointer?
+  if (p_bno055 == BNO055_Zero_U8X) {
+      ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_set_mag_operation_mode':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:9714:14: error: comparison between pointer and zero character constant error=pointer-compare]
+ if (p_bno055 == BNO055_Zero_U8X) {
+              ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:9714:5: note: did you mean to dereference the pointer?
+ if (p_bno055 == BNO055_Zero_U8X) {
+     ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:9719:3: error: this 'if' clause does not guard... error=misleading-indentation]
+   if (prev_opmode != OPERATION_MODE_CONFIG)
+   ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:9722:4: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+    if (status == SUCCESS) {
+    ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_get_mag_powermode':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:9803:15: error: comparison between pointer and zero character constant error=pointer-compare]
+  if (p_bno055 == BNO055_Zero_U8X) {
+               ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:9803:6: note: did you mean to dereference the pointer?
+  if (p_bno055 == BNO055_Zero_U8X) {
+      ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_set_mag_powermode':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:9865:14: error: comparison between pointer and zero character constant error=pointer-compare]
+ if (p_bno055 == BNO055_Zero_U8X) {
+              ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:9865:5: note: did you mean to dereference the pointer?
+ if (p_bno055 == BNO055_Zero_U8X) {
+     ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:9870:2: error: this 'if' clause does not guard... error=misleading-indentation]
+  if (prev_opmode != OPERATION_MODE_CONFIG)
+  ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:9872:3: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+   if (status == SUCCESS) {
+   ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_get_gyro_range':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:9952:15: error: comparison between pointer and zero character constant error=pointer-compare]
+  if (p_bno055 == BNO055_Zero_U8X) {
+               ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:9952:6: note: did you mean to dereference the pointer?
+  if (p_bno055 == BNO055_Zero_U8X) {
+      ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_set_gyro_range':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:10015:14: error: comparison between pointer and zero character constant error=pointer-compare]
+ if (p_bno055 == BNO055_Zero_U8X) {
+              ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:10015:5: note: did you mean to dereference the pointer?
+ if (p_bno055 == BNO055_Zero_U8X) {
+     ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:10020:3: error: this 'if' clause does not guard... error=misleading-indentation]
+   if (prev_opmode != OPERATION_MODE_CONFIG)
+   ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:10023:4: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+    if (status == SUCCESS) {
+    ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_get_gyro_bandwidth':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:10107:15: error: comparison between pointer and zero character constant error=pointer-compare]
+  if (p_bno055 == BNO055_Zero_U8X) {
+               ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:10107:6: note: did you mean to dereference the pointer?
+  if (p_bno055 == BNO055_Zero_U8X) {
+      ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_set_gyro_bandwidth':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:10175:14: error: comparison between pointer and zero character constant error=pointer-compare]
+ if (p_bno055 == BNO055_Zero_U8X) {
+              ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:10175:5: note: did you mean to dereference the pointer?
+ if (p_bno055 == BNO055_Zero_U8X) {
+     ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:10180:2: error: this 'if' clause does not guard... error=misleading-indentation]
+  if (prev_opmode != OPERATION_MODE_CONFIG)
+  ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:10183:3: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+   if (status == SUCCESS) {
+   ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_get_gyro_operation_mode':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:10301:15: error: comparison between pointer and zero character constant error=pointer-compare]
+  if (p_bno055 == BNO055_Zero_U8X) {
+               ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:10301:6: note: did you mean to dereference the pointer?
+  if (p_bno055 == BNO055_Zero_U8X) {
+      ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_set_gyro_operation_mode':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:10366:14: error: comparison between pointer and zero character constant error=pointer-compare]
+ if (p_bno055 == BNO055_Zero_U8X) {
+              ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:10366:5: note: did you mean to dereference the pointer?
+ if (p_bno055 == BNO055_Zero_U8X) {
+     ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:10371:2: error: this 'if' clause does not guard... error=misleading-indentation]
+  if (prev_opmode != OPERATION_MODE_CONFIG)
+  ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:10374:3: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+   if (status == SUCCESS) {
+   ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_get_accel_sleeptmr_mode':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:10486:15: error: comparison between pointer and zero character constant error=pointer-compare]
+  if (p_bno055 == BNO055_Zero_U8X) {
+               ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:10486:6: note: did you mean to dereference the pointer?
+  if (p_bno055 == BNO055_Zero_U8X) {
+      ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_set_accel_sleeptmr_mode':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:10544:14: error: comparison between pointer and zero character constant error=pointer-compare]
+ if (p_bno055 == BNO055_Zero_U8X) {
+              ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:10544:5: note: did you mean to dereference the pointer?
+ if (p_bno055 == BNO055_Zero_U8X) {
+     ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:10549:3: error: this 'if' clause does not guard... error=misleading-indentation]
+   if (prev_opmode != OPERATION_MODE_CONFIG)
+   ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:10552:4: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+    if (status == SUCCESS) {
+    ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_get_accel_sleep_dur':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:10639:15: error: comparison between pointer and zero character constant error=pointer-compare]
+  if (p_bno055 == BNO055_Zero_U8X) {
+               ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:10639:6: note: did you mean to dereference the pointer?
+  if (p_bno055 == BNO055_Zero_U8X) {
+      ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_set_accel_sleep_dur':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:10703:14: error: comparison between pointer and zero character constant error=pointer-compare]
+ if (p_bno055 == BNO055_Zero_U8X) {
+              ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:10703:5: note: did you mean to dereference the pointer?
+ if (p_bno055 == BNO055_Zero_U8X) {
+     ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:10708:3: error: this 'if' clause does not guard... error=misleading-indentation]
+   if (prev_opmode != OPERATION_MODE_CONFIG)
+   ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:10711:4: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+    if (status == SUCCESS) {
+    ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_get_gyro_sleepdur':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:10785:15: error: comparison between pointer and zero character constant error=pointer-compare]
+  if (p_bno055 == BNO055_Zero_U8X) {
+               ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:10785:6: note: did you mean to dereference the pointer?
+  if (p_bno055 == BNO055_Zero_U8X) {
+      ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_set_gyro_sleepdur':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:10840:14: error: comparison between pointer and zero character constant error=pointer-compare]
+ if (p_bno055 == BNO055_Zero_U8X) {
+              ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:10840:5: note: did you mean to dereference the pointer?
+ if (p_bno055 == BNO055_Zero_U8X) {
+     ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:10845:3: error: this 'if' clause does not guard... error=misleading-indentation]
+   if (prev_opmode != OPERATION_MODE_CONFIG)
+   ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:10848:4: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+    if (status == SUCCESS) {
+    ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_get_gyro_autosleepdur':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:10917:15: error: comparison between pointer and zero character constant error=pointer-compare]
+  if (p_bno055 == BNO055_Zero_U8X) {
+               ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:10917:6: note: did you mean to dereference the pointer?
+  if (p_bno055 == BNO055_Zero_U8X) {
+      ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_gyro_set_autosleepdur':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:10973:14: error: comparison between pointer and zero character constant error=pointer-compare]
+ if (p_bno055 == BNO055_Zero_U8X) {
+              ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:10973:5: note: did you mean to dereference the pointer?
+ if (p_bno055 == BNO055_Zero_U8X) {
+     ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:10978:2: error: this 'if' clause does not guard... error=misleading-indentation]
+  if (prev_opmode != OPERATION_MODE_CONFIG)
+  ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:10981:3: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+   if (status == SUCCESS) {
+   ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_get_mag_sleep_mode':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:11139:15: error: comparison between pointer and zero character constant error=pointer-compare]
+  if (p_bno055 == BNO055_Zero_U8X) {
+               ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:11139:6: note: did you mean to dereference the pointer?
+  if (p_bno055 == BNO055_Zero_U8X) {
+      ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_set_mag_sleep_mode':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:11195:14: error: comparison between pointer and zero character constant error=pointer-compare]
+ if (p_bno055 == BNO055_Zero_U8X) {
+              ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:11195:5: note: did you mean to dereference the pointer?
+ if (p_bno055 == BNO055_Zero_U8X) {
+     ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:11200:3: error: this 'if' clause does not guard... error=misleading-indentation]
+   if (prev_opmode != OPERATION_MODE_CONFIG)
+   ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:11203:4: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+    if (status == SUCCESS) {
+    ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_get_mag_sleep_duration':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:11273:15: error: comparison between pointer and zero character constant error=pointer-compare]
+  if (p_bno055 == BNO055_Zero_U8X) {
+               ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:11273:6: note: did you mean to dereference the pointer?
+  if (p_bno055 == BNO055_Zero_U8X) {
+      ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_set_mag_sleep_duration':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:11330:14: error: comparison between pointer and zero character constant error=pointer-compare]
+ if (p_bno055 == BNO055_Zero_U8X) {
+              ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:11330:5: note: did you mean to dereference the pointer?
+ if (p_bno055 == BNO055_Zero_U8X) {
+     ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:11335:3: error: this 'if' clause does not guard... error=misleading-indentation]
+   if (prev_opmode != OPERATION_MODE_CONFIG)
+   ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:11338:4: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+    if (status == SUCCESS) {
+    ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_get_intmsk_gyro_anymotion':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:11407:15: error: comparison between pointer and zero character constant error=pointer-compare]
+  if (p_bno055 == BNO055_Zero_U8X) {
+               ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:11407:6: note: did you mean to dereference the pointer?
+  if (p_bno055 == BNO055_Zero_U8X) {
+      ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_set_intmsk_gyro_anymotion':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:11463:15: error: comparison between pointer and zero character constant error=pointer-compare]
+  if (p_bno055 == BNO055_Zero_U8X) {
+               ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:11463:6: note: did you mean to dereference the pointer?
+  if (p_bno055 == BNO055_Zero_U8X) {
+      ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_get_intmsk_gyro_highrate':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:11521:15: error: comparison between pointer and zero character constant error=pointer-compare]
+  if (p_bno055 == BNO055_Zero_U8X) {
+               ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:11521:6: note: did you mean to dereference the pointer?
+  if (p_bno055 == BNO055_Zero_U8X) {
+      ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_set_intmsk_gyro_highrate':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:11578:15: error: comparison between pointer and zero character constant error=pointer-compare]
+  if (p_bno055 == BNO055_Zero_U8X) {
+               ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:11578:6: note: did you mean to dereference the pointer?
+  if (p_bno055 == BNO055_Zero_U8X) {
+      ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_get_intmsk_accel_high_g':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:11636:15: error: comparison between pointer and zero character constant error=pointer-compare]
+  if (p_bno055 == BNO055_Zero_U8X) {
+               ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:11636:6: note: did you mean to dereference the pointer?
+  if (p_bno055 == BNO055_Zero_U8X) {
+      ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_set_intmsk_accel_high_g':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:11692:15: error: comparison between pointer and zero character constant error=pointer-compare]
+  if (p_bno055 == BNO055_Zero_U8X) {
+               ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:11692:6: note: did you mean to dereference the pointer?
+  if (p_bno055 == BNO055_Zero_U8X) {
+      ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_get_intmsk_accel_anymotion':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:11750:15: error: comparison between pointer and zero character constant error=pointer-compare]
+  if (p_bno055 == BNO055_Zero_U8X) {
+               ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:11750:6: note: did you mean to dereference the pointer?
+  if (p_bno055 == BNO055_Zero_U8X) {
+      ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_set_intmsk_accel_anymotion':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:11806:15: error: comparison between pointer and zero character constant error=pointer-compare]
+  if (p_bno055 == BNO055_Zero_U8X) {
+               ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:11806:6: note: did you mean to dereference the pointer?
+  if (p_bno055 == BNO055_Zero_U8X) {
+      ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_get_intmsk_accel_nomotion':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:11864:15: error: comparison between pointer and zero character constant error=pointer-compare]
+  if (p_bno055 == BNO055_Zero_U8X) {
+               ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:11864:6: note: did you mean to dereference the pointer?
+  if (p_bno055 == BNO055_Zero_U8X) {
+      ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_set_intmsk_accel_nomotion':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:11920:15: error: comparison between pointer and zero character constant error=pointer-compare]
+  if (p_bno055 == BNO055_Zero_U8X) {
+               ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:11920:6: note: did you mean to dereference the pointer?
+  if (p_bno055 == BNO055_Zero_U8X) {
+      ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_get_int_gyro_anymotion':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:11978:15: error: comparison between pointer and zero character constant error=pointer-compare]
+  if (p_bno055 == BNO055_Zero_U8X) {
+               ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:11978:6: note: did you mean to dereference the pointer?
+  if (p_bno055 == BNO055_Zero_U8X) {
+      ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_set_int_gyro_anymotion':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:12034:15: error: comparison between pointer and zero character constant error=pointer-compare]
+  if (p_bno055 == BNO055_Zero_U8X) {
+               ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:12034:6: note: did you mean to dereference the pointer?
+  if (p_bno055 == BNO055_Zero_U8X) {
+      ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_get_int_gyro_highrate':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:12092:15: error: comparison between pointer and zero character constant error=pointer-compare]
+  if (p_bno055 == BNO055_Zero_U8X) {
+               ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:12092:6: note: did you mean to dereference the pointer?
+  if (p_bno055 == BNO055_Zero_U8X) {
+      ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_set_int_gyro_highrate':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:12148:15: error: comparison between pointer and zero character constant error=pointer-compare]
+  if (p_bno055 == BNO055_Zero_U8X) {
+               ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:12148:6: note: did you mean to dereference the pointer?
+  if (p_bno055 == BNO055_Zero_U8X) {
+      ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_get_int_accel_high_g':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:12207:15: error: comparison between pointer and zero character constant error=pointer-compare]
+  if (p_bno055 == BNO055_Zero_U8X) {
+               ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:12207:6: note: did you mean to dereference the pointer?
+  if (p_bno055 == BNO055_Zero_U8X) {
+      ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_set_int_accel_high_g':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:12262:15: error: comparison between pointer and zero character constant error=pointer-compare]
+  if (p_bno055 == BNO055_Zero_U8X) {
+               ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:12262:6: note: did you mean to dereference the pointer?
+  if (p_bno055 == BNO055_Zero_U8X) {
+      ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_get_int_accel_anymotion':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:12321:15: error: comparison between pointer and zero character constant error=pointer-compare]
+  if (p_bno055 == BNO055_Zero_U8X) {
+               ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:12321:6: note: did you mean to dereference the pointer?
+  if (p_bno055 == BNO055_Zero_U8X) {
+      ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_set_int_accel_anymotion':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:12377:15: error: comparison between pointer and zero character constant error=pointer-compare]
+  if (p_bno055 == BNO055_Zero_U8X) {
+               ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:12377:6: note: did you mean to dereference the pointer?
+  if (p_bno055 == BNO055_Zero_U8X) {
+      ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_get_int_accel_nomotion':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:12435:15: error: comparison between pointer and zero character constant error=pointer-compare]
+  if (p_bno055 == BNO055_Zero_U8X) {
+               ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:12435:6: note: did you mean to dereference the pointer?
+  if (p_bno055 == BNO055_Zero_U8X) {
+      ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_set_int_accel_nomotion':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:12491:15: error: comparison between pointer and zero character constant error=pointer-compare]
+  if (p_bno055 == BNO055_Zero_U8X) {
+               ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:12491:6: note: did you mean to dereference the pointer?
+  if (p_bno055 == BNO055_Zero_U8X) {
+      ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_get_accel_anymotion_threshold':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:12549:15: error: comparison between pointer and zero character constant error=pointer-compare]
+  if (p_bno055 == BNO055_Zero_U8X) {
+               ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:12549:6: note: did you mean to dereference the pointer?
+  if (p_bno055 == BNO055_Zero_U8X) {
+      ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_set_accel_anymotion_threshold':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:12605:14: error: comparison between pointer and zero character constant error=pointer-compare]
+ if (p_bno055 == BNO055_Zero_U8X) {
+              ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:12605:5: note: did you mean to dereference the pointer?
+ if (p_bno055 == BNO055_Zero_U8X) {
+     ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:12610:3: error: this 'if' clause does not guard... error=misleading-indentation]
+   if (prev_opmode != OPERATION_MODE_CONFIG)
+   ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:12613:4: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+    if (status == SUCCESS) {
+    ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_get_accel_anymotion_duration':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:12683:15: error: comparison between pointer and zero character constant error=pointer-compare]
+  if (p_bno055 == BNO055_Zero_U8X) {
+               ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:12683:6: note: did you mean to dereference the pointer?
+  if (p_bno055 == BNO055_Zero_U8X) {
+      ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_set_accel_anymotion_duration':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:12739:14: error: comparison between pointer and zero character constant error=pointer-compare]
+ if (p_bno055 == BNO055_Zero_U8X) {
+              ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:12739:5: note: did you mean to dereference the pointer?
+ if (p_bno055 == BNO055_Zero_U8X) {
+     ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:12744:3: error: this 'if' clause does not guard... error=misleading-indentation]
+   if (prev_opmode != OPERATION_MODE_CONFIG)
+   ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:12747:4: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+    if (status == SUCCESS) {
+    ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_get_accel_an_nm_axis_enable':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:12822:15: error: comparison between pointer and zero character constant error=pointer-compare]
+  if (p_bno055 == BNO055_Zero_U8X) {
+               ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:12822:6: note: did you mean to dereference the pointer?
+  if (p_bno055 == BNO055_Zero_U8X) {
+      ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_set_accel_an_nm_axis_enable':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:12911:14: error: comparison between pointer and zero character constant error=pointer-compare]
+ if (p_bno055 == BNO055_Zero_U8X) {
+              ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:12911:5: note: did you mean to dereference the pointer?
+ if (p_bno055 == BNO055_Zero_U8X) {
+     ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:12916:3: error: this 'if' clause does not guard... error=misleading-indentation]
+   if (prev_opmode != OPERATION_MODE_CONFIG)
+   ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:12919:4: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+    if (status == SUCCESS) {
+    ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_get_accel_high_g_axis_enable':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:13027:15: error: comparison between pointer and zero character constant error=pointer-compare]
+  if (p_bno055 == BNO055_Zero_U8X) {
+               ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:13027:6: note: did you mean to dereference the pointer?
+  if (p_bno055 == BNO055_Zero_U8X) {
+      ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_set_accel_high_g_axis_enable':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:13116:14: error: comparison between pointer and zero character constant error=pointer-compare]
+ if (p_bno055 == BNO055_Zero_U8X) {
+              ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:13116:5: note: did you mean to dereference the pointer?
+ if (p_bno055 == BNO055_Zero_U8X) {
+     ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:13121:3: error: this 'if' clause does not guard... error=misleading-indentation]
+   if (prev_opmode != OPERATION_MODE_CONFIG)
+   ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:13124:4: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+    if (status == SUCCESS) {
+    ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_get_accel_high_g_duration':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:13225:15: error: comparison between pointer and zero character constant error=pointer-compare]
+  if (p_bno055 == BNO055_Zero_U8X) {
+               ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:13225:6: note: did you mean to dereference the pointer?
+  if (p_bno055 == BNO055_Zero_U8X) {
+      ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_set_accel_high_g_duration':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:13281:14: error: comparison between pointer and zero character constant error=pointer-compare]
+ if (p_bno055 == BNO055_Zero_U8X) {
+              ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:13281:5: note: did you mean to dereference the pointer?
+ if (p_bno055 == BNO055_Zero_U8X) {
+     ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:13286:3: error: this 'if' clause does not guard... error=misleading-indentation]
+   if (prev_opmode != OPERATION_MODE_CONFIG)
+   ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:13290:4: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+    if (status == SUCCESS) {
+    ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_get_accel_high_g_threshold':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:13359:15: error: comparison between pointer and zero character constant error=pointer-compare]
+  if (p_bno055 == BNO055_Zero_U8X) {
+               ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:13359:6: note: did you mean to dereference the pointer?
+  if (p_bno055 == BNO055_Zero_U8X) {
+      ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_set_accel_high_g_threshold':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:13416:14: error: comparison between pointer and zero character constant error=pointer-compare]
+ if (p_bno055 == BNO055_Zero_U8X) {
+              ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:13416:5: note: did you mean to dereference the pointer?
+ if (p_bno055 == BNO055_Zero_U8X) {
+     ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:13421:3: error: this 'if' clause does not guard... error=misleading-indentation]
+   if (prev_opmode != OPERATION_MODE_CONFIG)
+   ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:13424:4: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+    if (status == SUCCESS) {
+    ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_get_accel_slow_no_threshold':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:13495:15: error: comparison between pointer and zero character constant error=pointer-compare]
+  if (p_bno055 == BNO055_Zero_U8X) {
+               ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:13495:6: note: did you mean to dereference the pointer?
+  if (p_bno055 == BNO055_Zero_U8X) {
+      ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_set_accel_slow_no_threshold':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:13552:14: error: comparison between pointer and zero character constant error=pointer-compare]
+ if (p_bno055 == BNO055_Zero_U8X) {
+              ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:13552:5: note: did you mean to dereference the pointer?
+ if (p_bno055 == BNO055_Zero_U8X) {
+     ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:13557:3: error: this 'if' clause does not guard... error=misleading-indentation]
+   if (prev_opmode != OPERATION_MODE_CONFIG)
+   ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:13561:4: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+    if (status == SUCCESS) {
+    ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_get_accel_slow_no_motion_enable':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:13631:15: error: comparison between pointer and zero character constant error=pointer-compare]
+  if (p_bno055 == BNO055_Zero_U8X) {
+               ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:13631:6: note: did you mean to dereference the pointer?
+  if (p_bno055 == BNO055_Zero_U8X) {
+      ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_set_accel_slow_no_motion_enable':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:13690:14: error: comparison between pointer and zero character constant error=pointer-compare]
+ if (p_bno055 == BNO055_Zero_U8X) {
+              ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:13690:5: note: did you mean to dereference the pointer?
+ if (p_bno055 == BNO055_Zero_U8X) {
+     ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:13695:3: error: this 'if' clause does not guard... error=misleading-indentation]
+   if (prev_opmode != OPERATION_MODE_CONFIG)
+   ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:13699:4: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+    if (status == SUCCESS) {
+    ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_get_accel_slow_no_duration':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:13769:15: error: comparison between pointer and zero character constant error=pointer-compare]
+  if (p_bno055 == BNO055_Zero_U8X) {
+               ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:13769:6: note: did you mean to dereference the pointer?
+  if (p_bno055 == BNO055_Zero_U8X) {
+      ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_set_accel_slow_no_duration':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:13825:14: error: comparison between pointer and zero character constant error=pointer-compare]
+ if (p_bno055 == BNO055_Zero_U8X) {
+              ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:13825:5: note: did you mean to dereference the pointer?
+ if (p_bno055 == BNO055_Zero_U8X) {
+     ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:13830:3: error: this 'if' clause does not guard... error=misleading-indentation]
+   if (prev_opmode != OPERATION_MODE_CONFIG)
+   ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:13834:4: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+    if (status == SUCCESS) {
+    ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_get_gyro_anymotion_axis_enable':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:13909:15: error: comparison between pointer and zero character constant error=pointer-compare]
+  if (p_bno055 == BNO055_Zero_U8X) {
+               ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:13909:6: note: did you mean to dereference the pointer?
+  if (p_bno055 == BNO055_Zero_U8X) {
+      ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_set_gyro_anymotion_axis_enable':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:13995:14: error: comparison between pointer and zero character constant error=pointer-compare]
+ if (p_bno055 == BNO055_Zero_U8X) {
+              ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:13995:5: note: did you mean to dereference the pointer?
+ if (p_bno055 == BNO055_Zero_U8X) {
+     ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:14000:3: error: this 'if' clause does not guard... error=misleading-indentation]
+   if (prev_opmode != OPERATION_MODE_CONFIG)
+   ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:14004:4: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+    if (status == SUCCESS) {
+    ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_get_gyro_highrate_axis_enable':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:14118:15: error: comparison between pointer and zero character constant error=pointer-compare]
+  if (p_bno055 == BNO055_Zero_U8X) {
+               ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:14118:6: note: did you mean to dereference the pointer?
+  if (p_bno055 == BNO055_Zero_U8X) {
+      ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_set_gyro_highrate_axis_enable':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:14207:14: error: comparison between pointer and zero character constant error=pointer-compare]
+ if (p_bno055 == BNO055_Zero_U8X) {
+              ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:14207:5: note: did you mean to dereference the pointer?
+ if (p_bno055 == BNO055_Zero_U8X) {
+     ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:14212:3: error: this 'if' clause does not guard... error=misleading-indentation]
+   if (prev_opmode != OPERATION_MODE_CONFIG)
+   ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:14216:4: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+    if (status == SUCCESS) {
+    ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_get_gyro_anymotion_filter':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:14320:15: error: comparison between pointer and zero character constant error=pointer-compare]
+  if (p_bno055 == BNO055_Zero_U8X) {
+               ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:14320:6: note: did you mean to dereference the pointer?
+  if (p_bno055 == BNO055_Zero_U8X) {
+      ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_set_gyro_anymotion_filter':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:14375:14: error: comparison between pointer and zero character constant error=pointer-compare]
+ if (p_bno055 == BNO055_Zero_U8X) {
+              ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:14375:5: note: did you mean to dereference the pointer?
+ if (p_bno055 == BNO055_Zero_U8X) {
+     ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:14380:3: error: this 'if' clause does not guard... error=misleading-indentation]
+   if (prev_opmode != OPERATION_MODE_CONFIG)
+   ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:14384:4: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+    if (status == SUCCESS) {
+    ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_get_gyro_highrate_filter':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:14452:15: error: comparison between pointer and zero character constant error=pointer-compare]
+  if (p_bno055 == BNO055_Zero_U8X) {
+               ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:14452:6: note: did you mean to dereference the pointer?
+  if (p_bno055 == BNO055_Zero_U8X) {
+      ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_set_gyro_highrate_filter':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:14507:14: error: comparison between pointer and zero character constant error=pointer-compare]
+ if (p_bno055 == BNO055_Zero_U8X) {
+              ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:14507:5: note: did you mean to dereference the pointer?
+ if (p_bno055 == BNO055_Zero_U8X) {
+     ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:14512:3: error: this 'if' clause does not guard... error=misleading-indentation]
+   if (prev_opmode != OPERATION_MODE_CONFIG)
+   ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:14516:4: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+    if (status == SUCCESS) {
+    ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_get_gyro_highrate_x_threshold':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:14587:15: error: comparison between pointer and zero character constant error=pointer-compare]
+  if (p_bno055 == BNO055_Zero_U8X) {
+               ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:14587:6: note: did you mean to dereference the pointer?
+  if (p_bno055 == BNO055_Zero_U8X) {
+      ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_set_gyro_highrate_x_threshold':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:14642:14: error: comparison between pointer and zero character constant error=pointer-compare]
+ if (p_bno055 == BNO055_Zero_U8X) {
+              ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:14642:5: note: did you mean to dereference the pointer?
+ if (p_bno055 == BNO055_Zero_U8X) {
+     ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:14647:3: error: this 'if' clause does not guard... error=misleading-indentation]
+   if (prev_opmode != OPERATION_MODE_CONFIG)
+   ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:14651:4: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+    if (status == SUCCESS) {
+    ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_get_gyro_highrate_x_hysteresis':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:14720:15: error: comparison between pointer and zero character constant error=pointer-compare]
+  if (p_bno055 == BNO055_Zero_U8X) {
+               ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:14720:6: note: did you mean to dereference the pointer?
+  if (p_bno055 == BNO055_Zero_U8X) {
+      ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_set_gyro_highrate_x_hysteresis':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:14775:14: error: comparison between pointer and zero character constant error=pointer-compare]
+ if (p_bno055 == BNO055_Zero_U8X) {
+              ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:14775:5: note: did you mean to dereference the pointer?
+ if (p_bno055 == BNO055_Zero_U8X) {
+     ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:14780:3: error: this 'if' clause does not guard... error=misleading-indentation]
+   if (prev_opmode != OPERATION_MODE_CONFIG)
+   ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:14784:4: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+    if (status == SUCCESS) {
+    ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_get_gyro_highrate_x_duration':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:14852:15: error: comparison between pointer and zero character constant error=pointer-compare]
+  if (p_bno055 == BNO055_Zero_U8X) {
+               ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:14852:6: note: did you mean to dereference the pointer?
+  if (p_bno055 == BNO055_Zero_U8X) {
+      ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_set_gyro_highrate_x_duration':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:14907:14: error: comparison between pointer and zero character constant error=pointer-compare]
+ if (p_bno055 == BNO055_Zero_U8X) {
+              ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:14907:5: note: did you mean to dereference the pointer?
+ if (p_bno055 == BNO055_Zero_U8X) {
+     ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:14912:3: error: this 'if' clause does not guard... error=misleading-indentation]
+   if (prev_opmode != OPERATION_MODE_CONFIG)
+   ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:14916:4: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+    if (status == SUCCESS) {
+    ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_get_gyro_highrate_y_threshold':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:14985:15: error: comparison between pointer and zero character constant error=pointer-compare]
+  if (p_bno055 == BNO055_Zero_U8X) {
+               ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:14985:6: note: did you mean to dereference the pointer?
+  if (p_bno055 == BNO055_Zero_U8X) {
+      ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_set_gyro_highrate_y_threshold':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:15040:14: error: comparison between pointer and zero character constant error=pointer-compare]
+ if (p_bno055 == BNO055_Zero_U8X) {
+              ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:15040:5: note: did you mean to dereference the pointer?
+ if (p_bno055 == BNO055_Zero_U8X) {
+     ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:15045:3: error: this 'if' clause does not guard... error=misleading-indentation]
+   if (prev_opmode != OPERATION_MODE_CONFIG)
+   ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:15049:4: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+    if (status == SUCCESS) {
+    ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_get_gyro_highrate_y_hysteresis':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:15118:15: error: comparison between pointer and zero character constant error=pointer-compare]
+  if (p_bno055 == BNO055_Zero_U8X) {
+               ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:15118:6: note: did you mean to dereference the pointer?
+  if (p_bno055 == BNO055_Zero_U8X) {
+      ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_set_gyro_highrate_y_hysteresis':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:15173:14: error: comparison between pointer and zero character constant error=pointer-compare]
+ if (p_bno055 == BNO055_Zero_U8X) {
+              ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:15173:5: note: did you mean to dereference the pointer?
+ if (p_bno055 == BNO055_Zero_U8X) {
+     ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:15178:3: error: this 'if' clause does not guard... error=misleading-indentation]
+   if (prev_opmode != OPERATION_MODE_CONFIG)
+   ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:15182:4: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+    if (status == SUCCESS) {
+    ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_get_gyro_highrate_y_duration':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:15250:15: error: comparison between pointer and zero character constant error=pointer-compare]
+  if (p_bno055 == BNO055_Zero_U8X) {
+               ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:15250:6: note: did you mean to dereference the pointer?
+  if (p_bno055 == BNO055_Zero_U8X) {
+      ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_set_gyro_highrate_y_duration':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:15305:14: error: comparison between pointer and zero character constant error=pointer-compare]
+ if (p_bno055 == BNO055_Zero_U8X) {
+              ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:15305:5: note: did you mean to dereference the pointer?
+ if (p_bno055 == BNO055_Zero_U8X) {
+     ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:15310:3: error: this 'if' clause does not guard... error=misleading-indentation]
+   if (prev_opmode != OPERATION_MODE_CONFIG)
+   ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:15314:4: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+    if (status == SUCCESS) {
+    ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_get_gyro_highrate_z_threshold':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:15382:15: error: comparison between pointer and zero character constant error=pointer-compare]
+  if (p_bno055 == BNO055_Zero_U8X) {
+               ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:15382:6: note: did you mean to dereference the pointer?
+  if (p_bno055 == BNO055_Zero_U8X) {
+      ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_set_gyro_highrate_z_threshold':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:15437:14: error: comparison between pointer and zero character constant error=pointer-compare]
+ if (p_bno055 == BNO055_Zero_U8X) {
+              ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:15437:5: note: did you mean to dereference the pointer?
+ if (p_bno055 == BNO055_Zero_U8X) {
+     ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:15442:3: error: this 'if' clause does not guard... error=misleading-indentation]
+   if (prev_opmode != OPERATION_MODE_CONFIG)
+   ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:15446:4: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+    if (status == SUCCESS) {
+    ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_get_gyro_highrate_z_hysteresis':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:15515:15: error: comparison between pointer and zero character constant error=pointer-compare]
+  if (p_bno055 == BNO055_Zero_U8X) {
+               ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:15515:6: note: did you mean to dereference the pointer?
+  if (p_bno055 == BNO055_Zero_U8X) {
+      ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_set_gyro_highrate_z_hysteresis':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:15570:14: error: comparison between pointer and zero character constant error=pointer-compare]
+ if (p_bno055 == BNO055_Zero_U8X) {
+              ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:15570:5: note: did you mean to dereference the pointer?
+ if (p_bno055 == BNO055_Zero_U8X) {
+     ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:15575:3: error: this 'if' clause does not guard... error=misleading-indentation]
+   if (prev_opmode != OPERATION_MODE_CONFIG)
+   ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:15579:4: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+    if (status == SUCCESS) {
+    ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_get_gyro_highrate_z_duration':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:15648:15: error: comparison between pointer and zero character constant error=pointer-compare]
+  if (p_bno055 == BNO055_Zero_U8X) {
+               ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:15648:6: note: did you mean to dereference the pointer?
+  if (p_bno055 == BNO055_Zero_U8X) {
+      ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_set_gyro_highrate_z_duration':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:15704:14: error: comparison between pointer and zero character constant error=pointer-compare]
+ if (p_bno055 == BNO055_Zero_U8X) {
+              ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:15704:5: note: did you mean to dereference the pointer?
+ if (p_bno055 == BNO055_Zero_U8X) {
+     ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:15709:3: error: this 'if' clause does not guard... error=misleading-indentation]
+   if (prev_opmode != OPERATION_MODE_CONFIG)
+   ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:15713:4: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+    if (status == SUCCESS) {
+    ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_get_gyro_anymotion_threshold':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:15781:15: error: comparison between pointer and zero character constant error=pointer-compare]
+  if (p_bno055 == BNO055_Zero_U8X) {
+               ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:15781:6: note: did you mean to dereference the pointer?
+  if (p_bno055 == BNO055_Zero_U8X) {
+      ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_set_gyro_anymotion_threshold':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:15836:14: error: comparison between pointer and zero character constant error=pointer-compare]
+ if (p_bno055 == BNO055_Zero_U8X) {
+              ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:15836:5: note: did you mean to dereference the pointer?
+ if (p_bno055 == BNO055_Zero_U8X) {
+     ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:15841:3: error: this 'if' clause does not guard... error=misleading-indentation]
+   if (prev_opmode != OPERATION_MODE_CONFIG)
+   ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:15845:4: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+    if (status == SUCCESS) {
+    ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_get_gyro_anymotion_slope_samples':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:15913:15: error: comparison between pointer and zero character constant error=pointer-compare]
+  if (p_bno055 == BNO055_Zero_U8X) {
+               ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:15913:6: note: did you mean to dereference the pointer?
+  if (p_bno055 == BNO055_Zero_U8X) {
+      ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_set_gyro_anymotion_slope_samples':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:15968:14: error: comparison between pointer and zero character constant error=pointer-compare]
+ if (p_bno055 == BNO055_Zero_U8X) {
+              ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:15968:5: note: did you mean to dereference the pointer?
+ if (p_bno055 == BNO055_Zero_U8X) {
+     ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:15973:3: error: this 'if' clause does not guard... error=misleading-indentation]
+   if (prev_opmode != OPERATION_MODE_CONFIG)
+   ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:15977:4: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+    if (status == SUCCESS) {
+    ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_get_gyro_anymotion_awake_duration':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:16045:15: error: comparison between pointer and zero character constant error=pointer-compare]
+  if (p_bno055 == BNO055_Zero_U8X) {
+               ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:16045:6: note: did you mean to dereference the pointer?
+  if (p_bno055 == BNO055_Zero_U8X) {
+      ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bno055_set_gyro_anymotion_awake_duration':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:16100:14: error: comparison between pointer and zero character constant error=pointer-compare]
+ if (p_bno055 == BNO055_Zero_U8X) {
+              ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:16100:5: note: did you mean to dereference the pointer?
+ if (p_bno055 == BNO055_Zero_U8X) {
+     ^
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:16105:3: error: this 'if' clause does not guard... error=misleading-indentation]
+   if (prev_opmode != OPERATION_MODE_CONFIG)
+   ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:16108:4: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+    if (status == SUCCESS) {
+    ^~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bus_read':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:45:1: error: control reaches end of non-void function error=return-type]
+ bus_read(dev_addr, reg_addr, reg_data, r_len){}
+ ^~~~~~~~
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c: In function 'bus_write':
+keyboards/handwired/pterodactyl/keymaps/i2c_scanner/BNO055.c:46:1: error: control reaches end of non-void function error=return-type]
+ bus_write(dev_addr, reg_addr, reg_data, wr_len){}
+ ^~~~~~~~~
