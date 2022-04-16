@@ -140,6 +140,7 @@ BNO055_RETURN_FUNCTION_TYPE BNO055_I2C_bus_write(unsigned char dev_addr,unsigned
 {
 	BNO055_RETURN_FUNCTION_TYPE comres = BNO055_Zero_U8X;
 	i2c_status_t status = i2c_writeReg(dev_addr, reg_addr, reg_data, cnt, I2C_TIMEOUT);
+    _delay(1);
 
 	// Wire.beginTransmission(dev_addr);	//Start of transmission
 	// Wire.write(reg_addr);				//Desired start register
@@ -163,11 +164,14 @@ BNO055_RETURN_FUNCTION_TYPE BNO055_I2C_bus_write(unsigned char dev_addr,unsigned
  ****************************************************************************/
 void _delay(unsigned int period)
 {
+        // _delay_us(period*1000);
+
     // wait_ms(period);
     volatile uint32_t i = 0;
-    for (i = 0xFF; i != 0; i--) {
+    for(int j=0;j<period;j++){
+        for (i = 0xFF; i != 0; i--) {
+        }
     }
-
 }
 // void _delay(unsigned long ms)
 // {

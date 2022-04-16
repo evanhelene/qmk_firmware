@@ -5,7 +5,13 @@
 #include "version.h"
 #include "bno055_support.h"
 
+#define BASE 0 // default layer
 #define TIMEOUT 50
+
+#define BADDR  0x28
+ // BNO055_I2C_ADDR << 1
+
+ uint16_t timeout = TIMEOUT;
 
 enum
 {
@@ -14,120 +20,42 @@ enum
     _MDIA,
 };
 
-// TODO: remove patch
-#ifdef PROTOCOL_CHIBIOS
-#    pragma message("ChibiOS is currently 'best effort' and might not report accurate results")
-
-i2c_status_t i2c_start_bodge(uint8_t address, uint16_t timeout) {
-    i2c_start(address);
-
-    // except on ChibiOS where the only way is do do "something"
-    uint8_t data = 0;
-    return i2c_readReg(address, 0, &data, sizeof(data), TIMEOUT);
-}
-
-#    define i2c_start i2c_start_bodge
-#endif
-
-
-
-void do_scan(void) {
-    uint8_t nDevices = 0;
-
-    dprintf("Scanning...\n");
-
-    for (uint8_t address = 1; address < 127; address++) {
-        // The i2c_scanner uses the return value of
-        // i2c_start to see if a device did acknowledge to the address.
-        i2c_status_t error = i2c_start(address << 1, TIMEOUT);
-        if (error == I2C_STATUS_SUCCESS) {
-            i2c_stop();
-            dprintf("  I2C device found at address 0x%02X\n", address);
-            nDevices++;
-        } else {
-            // dprintf("  Unknown error (%u) at address 0x%02X\n", error, address);
-        }
-    }
-
-    if (nDevices == 0)
-        dprintf("No I2C devices found\n");
-    else
-        dprintf("done\n");
-}
-
+static struct bno055_t myBNO;
+static struct bno055_euler myEulerData;
 uint16_t scan_timer = 0;
+// unsigned char bno055_i2c_address = BNO055_I2C_ADDR << 1;
 
-void matrix_scan_user(void) {
-    if (timer_elapsed(scan_timer) > 5000) {
-        do_scan();
-        scan_timer = timer_read();
-    }
+void read_bno055(void){
+
+        BNO055_S16 temperature;
+        struct bno055_gyro gry;
+        struct bno055_accel acc;
+        struct bno055_linear_accel lia;
+        struct bno055_gravity grvt;
+        struct bno055_quaternion qur;
+        struct bno055_mag mag;
+        int status = bno055_read_euler_hrp(&myEulerData);
+        dprintf("%d %d %d %d euler\n", status,myEulerData.r,myEulerData.p,myEulerData.h);
+        status = bno055_read_temperature_data(&temperature);
+        dprintf("%d %d temp \n", status, temperature);
+        status = bno055_read_mag_xyz(&mag);
+        dprintf("%d %d %d %d mag\n", status, mag.x, mag.y, mag.z);
+        status = bno055_read_gyro_xyz(&gry);
+        dprintf("%d %d %d %d gyro\n", status, gry.x, gry.y, gry.z);
+        status = bno055_read_linear_accel_xyz(&lia);
+        dprintf("%d %d %d %d lia\n", status, lia.x, lia.y, lia.z);
+        status = bno055_read_accel_xyz(&acc);
+        dprintf("%d %d %d %d accel\n", status, acc.x, acc.y, acc.z);
+        bno055_read_gravity_xyz(&grvt);
+        dprintf("%d %d %d %d grvt\n", status, grvt.x, grvt.y, grvt.z);
+        bno055_read_quaternion_wxyz(&qur);
+        dprintf("%d %d %d %d %d quat\n", status, qur.w, qur.x, qur.y, qur.z);
+
+
+        // int x = int(float(myEulerData.r) / 16.0) * 100;     // roll in degrees
+        // int y = int(float(myEulerData.p) / 16.0) * 100;     // pitch in degrees
+        // int z = int(float(myEulerData.h) / 16.0) * 100;     // heading in degrees
 }
-
-void keyboard_post_init_user(void) {
-    debug_enable = true;
-    debug_matrix = true;
-
-    i2c_init();
-    scan_timer = timer_read();
-}
-
-// #define BASE 0 // default layer
-// #define TIMEOUT 200
-
-// static struct bno055_t myBNO;
-// static struct bno055_euler myEulerData;
-// uint16_t scan_timer = 0;
-// // unsigned char bno055_i2c_address = BNO055_I2C_ADDR << 1;
-
-// void read_bno055(void){
-
-//     i2c_status_t error = i2c_start(BNO055_I2C_ADDR, I2C_TIMEOUT);
-//     if (error == I2C_STATUS_SUCCESS) {
-//         BNO_Init(&myBNO);
-//         bno055_set_operation_mode(OPERATION_MODE_CONFIG);
-
-//         // use low power mode where accelerometer is always on
-//         // unsigned char mode = 1;
-//         // int status = BNO055_I2C_bus_write(BNO055_I2C_ADDR, BNO055_PWR_MODE_ADDR, &mode, I2C_TIMEOUT);
-//         // dprintf("%d ", status);
-//         // dprintf("%d ", BNO055_I2C_ADDR);
-
-//         dprintf("%d ", myBNO.dev_addr);
-//         dprintf("%d ", myBNO.sw_revision_id);
-
-//         unsigned char accelCalibStatus = 0;   //Variable to hold the calibration status of the Accelerometer
-//         unsigned char magCalibStatus = 0;   //Variable to hold the calibration status of the Magnetometer
-//         unsigned char gyroCalibStatus = 0;    //Variable to hold the calibration status of the Gyroscope
-//         unsigned char sysCalibStatus = 0;   //Variable to hold the calibration status of the System (BNO055's MCU)
-//         bno055_get_accelcalib_status(&accelCalibStatus);  //To read out the Acceleration Calibration Status (0-3)
-//         bno055_get_magcalib_status(&magCalibStatus);      //To read out the Magnetometer Calibration Status (0-3)
-//         bno055_get_gyrocalib_status(&gyroCalibStatus);     //To read out the Gyroscope Calibration Status (0-3)
-//         bno055_get_syscalib_status(&sysCalibStatus);      //To read out the System Calibration Status (0-3)
-//         dprintf("%d ", accelCalibStatus);
-//         dprintf("%d ", magCalibStatus);
-//         dprintf("%d ", gyroCalibStatus);
-//         dprintf("%d ", sysCalibStatus);
-//         dprintf(" calibration\n");
-
-//         int status = bno055_set_operation_mode(OPERATION_MODE_NDOF);
-//         dprintf("%d ", status);
-//         status = bno055_read_euler_hrp(&myEulerData);
-//         dprintf("%d ", status);
-
-//         // int x = int(float(myEulerData.r) / 16.0) * 100;     // roll in degrees
-//         // int y = int(float(myEulerData.p) / 16.0) * 100;     // pitch in degrees
-//         // int z = int(float(myEulerData.h) / 16.0) * 100;     // heading in degrees
-//         dprintf("%d ",myEulerData.r);
-//         dprintf("%d ",myEulerData.p);
-//         dprintf("%d ",myEulerData.h);
-//         dprintf(" euler\n");
-
-//         i2c_stop();
-//     } else {
-//         // dprintf("  Unknown error (%u) at address %d\n", error, BNO055_I2C_ADDR);
-//     }
-// }
 
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
@@ -233,72 +161,111 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 };
 
 
-// // TODO: remove patch
-// #ifdef PROTOCOL_CHIBIOS
-// #    pragma message("ChibiOS is currently 'best effort' and might not report accurate results")
+// TODO: remove patch
+#ifdef PROTOCOL_CHIBIOS
+#    pragma message("ChibiOS is currently 'best effort' and might not report accurate results")
 
-// i2c_status_t i2c_start_bodge(uint8_t address, uint16_t timeout) {
-//     i2c_start(address);
+i2c_status_t i2c_start_bodge(uint8_t address, uint16_t timeout) {
+    i2c_start(address);
 
-//     // except on ChibiOS where the only way is do do "something"
-//     uint8_t data = 0;
-//     return i2c_readReg(address, 0, &data, sizeof(data), timeout);
-// }
+    // except on ChibiOS where the only way is do do "something"
+    uint8_t data = 0;
+    return i2c_readReg(address, 0, &data, sizeof(data), timeout);
+}
 
-// #    define i2c_start i2c_start_bodge
-// #endif
+#    define i2c_start i2c_start_bodge
+#endif
 
-// // const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
-// //     LAYOUT_ortho_1x1(KC_A)
-// // };
+// const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
+//     LAYOUT_ortho_1x1(KC_A)
+// };
 
-// void do_scan(void) {
-//     uint8_t nDevices = 0;
+void do_scan(void) {
+    uint8_t nDevices = 0;
 
-//     dprintf("Scanning...\n");
+    dprintf("Scanning...\n");
+    for (uint8_t address = 1; address < 127; ) {
+        // The i2c_scanner uses the return value of
+        // i2c_start to see if a device did acknowledge to the address.
+        i2c_status_t error = i2c_start(address << 1, timeout);
+        if (error == I2C_STATUS_SUCCESS) {
+            i2c_stop();
+            dprintf("  I2C device found at address %X\n", address);
+            nDevices++;
+            address++;
+        // } else if(I2C_STATUS_TIMEOUT == error){
+        //     timeout *=2;
+            // dprintf("  Increasing timeout: (%u) at address %X\n", timeout, address);
+        // } else if(I2C_STATUS_ERROR == error){
+        //     address++;
+        } else {
+            // dprintf("  Unknown error (%u) at address %X\n", error, address);
+            address++;
+        }
+    }
 
-//     for (uint8_t address = 1; address < 127; address++) {
-//         // The i2c_scanner uses the return value of
-//         // i2c_start to see if a device did acknowledge to the address.
-//         i2c_status_t error = i2c_start(address << 1, I2C_TIMEOUT);
-//         if (error == I2C_STATUS_SUCCESS) {
-//             i2c_stop();
-//             dprintf("  I2C device found at address %d\n", address);
-//             nDevices++;
-//         } else {
-//             // dprintf("  Unknown error (%u) at address %d\n", error, address);
-//         }
-//     }
-
-//     if (nDevices == 0)
-//         dprintf("No I2C devices found\n");
-//     else
-//         dprintf("done\n");
-// }
-
-
-// void keyboard_post_init_user(void) {
-//     debug_enable = true;
-//     debug_matrix = true;
-
-//     i2c_init(); // BNO055_I2C_ADDR
-
-//     scan_timer = timer_read();
-
-// //     BNO_Init(&myBNO); //Assigning the structure to hold information about the device
-// //     bno055_set_operation_mode(OPERATION_MODE_NDOF);
-// // dprintf("i2c_init %d %d",myBNO.chip_id,myBNO.sw_revision_id);
-// }
+    if (nDevices == 0)
+        dprintf("No I2C devices found\n");
+    else
+        dprintf("done\n");
+}
 
 
+void keyboard_post_init_user(void) {
+    debug_enable = true;
+    debug_matrix = true;
 
-// void matrix_scan_user(void) {
-//         // read_bno055();
+    i2c_init();
+    unsigned char sys_status;
+    i2c_status_t status = bno055_get_system_status_code(&sys_status);
+    dprintf("bno055_get_system_status_code %X %x \n", status, sys_status);
 
-//     if (timer_elapsed(scan_timer) > 5000) {
-//         do_scan();
-//         // read_bnos055();
+    // i2c_status_t error = i2c_start(BNO055_I2C_ADDR << 1, I2C_TIMEOUT);
+    // if (error == I2C_STATUS_SUCCESS) {
+    //     int status = BNO_Init(&myBNO);
+    //     dprintf("BNO_Init %d \n", status);
+    //     status = bno055_set_operation_mode(OPERATION_MODE_CONFIG);
+    //     dprintf("bno055_set_operation_mode %d OPERATION_MODE_CONFIG\n", status);
+    //     status = bno055_set_powermode(POWER_MODE_NORMAL);
+    //     dprintf("bno055_set_powermode %d POWER_MODE_NORMAL\n", status);
+    //     status = bno055_set_operation_mode(OPERATION_MODE_NDOF);
+    //     dprintf("bno055_set_operation_mode %d OPERATION_MODE_NDOF\n", status);
 
-//         scan_timer = timer_read();
-//     }
-// }
+    //     unsigned char chip_id;
+    //     BNO055_U16 sw_id;
+    //     unsigned char pg_id;
+    //     status = bno055_read_chip_id(&chip_id);
+    //     dprintf("chip_id %d %u bno055_read_chip_id\n", status, chip_id);
+    //     status = bno055_read_sw_revision_id(&sw_id);
+    //     dprintf("sw_id %d %u bno055_read_sw_revision_id\n", status, sw_id);
+    //     status = bno055_read_page_id(&pg_id);
+    //     dprintf("pg_id %d %u bno055_read_page_id\n", status, pg_id);
+    //     // i2c_stop();
+    // } else {
+    //     dprintf("  Unknown error (%u) at address %u\n", error, BNO055_I2C_ADDR << 1);
+    // }
+
+    // use low power mode where accelerometer is always on
+    // unsigned char mode = 0;
+    // int status = BNO055_I2C_bus_write(BNO055_I2C_ADDR << 1, BNO055_PWR_MODE_ADDR, &mode, I2C_TIMEOUT);
+    // dprintf("%d ", status);
+
+    scan_timer = timer_read();
+
+//     BNO_Init(&myBNO); //Assigning the structure to hold information about the device
+//     bno055_set_operation_mode(OPERATION_MODE_NDOF);
+// dprintf("i2c_init %d %d",myBNO.chip_id,myBNO.sw_revision_id);
+}
+
+
+
+void matrix_scan_user(void) {
+        read_bno055();
+
+    // if (timer_elapsed(scan_timer) > 1000) {
+    //     // do_scan();
+    //     read_bno055();
+
+    //     scan_timer = timer_read();
+    // }
+}
